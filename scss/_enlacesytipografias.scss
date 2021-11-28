@@ -1,0 +1,279 @@
+/*-------------------------ENLACES A-------------------------------*/
+
+/*-----------------------BtnPrincipal tablet y escritorio----------------------------*/
+$color:red;
+
+a{
+    font-size: 16px;
+    font-weight: bold;
+}
+.contenedorTituloPrincipal__btnPrincipal--azul{ 
+margin-top: 20px;
+.btnPrincipal {
+text-decoration: none;
+color: #393b3d;
+font-size: 14px;
+background-color: yellow;
+padding: 10px 60px;  
+border-radius: 20px;
+
+}
+
+.btnPrincipal:hover {
+background-color: #393b3d;
+color: white;
+}
+}
+
+.logo{
+    width: 100px;
+}
+
+.play {
+    width: 100px;
+}
+.play:hover{
+    background-color: yellow;
+    border-radius: 50px;
+   }
+   
+
+.logoFooter{
+    width: 90px;  
+}
+/*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
+.btnSecundarioComunidad{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 40px;
+
+}
+
+.btnSecundarioComunidades{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+
+.btnSecundarioNovedades{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+
+.btnNovedades{
+text-decoration: none;
+color: #393b3d;
+font-size: 16px;
+background-color: #e9e8e8;
+padding: 10px 70px;  }
+
+.btnNovedades:hover{
+   background-color: yellow; 
+   color:#393b3d; ; }
+
+.btnSecundario{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+
+
+.btnComunidad{
+text-decoration: none;
+color: white;
+font-size: 16px;
+border:yellow 1.5;
+border-style: solid;
+padding: 10px 60px;  
+border-radius: 20px;
+}
+.btnComunidad:hover{
+    background-color: yellow;
+    color: #393b3d;
+    border: none;
+}
+
+
+.btnDescarga{
+text-decoration: none;
+color: blue;
+font-size: 14px;
+border:blue 1.5;
+border-style: solid;
+padding: 10px 50px;  
+border-radius: 20px;
+}
+
+.btnDescarga:hover{
+    background-color: blue;
+    border: blue;
+    color: white;
+}
+
+
+.btnEventos{
+text-decoration: none;
+color: #393b3d;
+font-size: 14px;
+background-color: white;
+padding: 10px 60px;  
+border-radius: 20px;
+}
+.btnEventos:hover{
+background-color: yellow;  
+color: #393b3d;
+
+}
+
+.NewsTitulo{
+    color: white;
+}
+.tituloChicoNovedad{
+    color: white;
+    margin-right: 170px;
+}
+
+
+/*------navAfter-----*/
+.navbar-nav{
+  
+    margin-left:140px;
+}
+.nav-item{
+    position: relative;
+    margin-right: 25px;
+
+}
+.nav-item a::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+}
+ 
+.nav-item a.selected::after,
+.nav-item a:hover::after{
+    opacity: 1;
+
+}
+
+/*-------------Redesfooter-------------*/
+
+
+
+
+/*-------------------indicadoresGenerales ------------------*/
+ 
+$parrafo:red;
+
+.ParrafoSomos{
+@if ($parrafo == azul) {
+    color: blue;
+    font-family: 'Lato', sans-serif;
+
+}@else{
+color: white;
+font-family: 'Lato', sans-serif;
+
+}
+}
+
+  
+
+
+
+
+@media only screen and (max-width:600px){
+
+.contenedorMain_comunidad__tituloComunidad--secundario{
+    background-color: palegreen;
+    height: 600px;
+}
+
+.btnSecundario{
+.btnComunidad{
+border: solid white 1.2px;
+padding: 10px 30px;
+color: white;
+}
+   
+.btnComunidad:hover{
+       color: white;}
+
+}
+}
+
+
+
+/*----------------------------------Imput Newsletter---------------------------------------*/
+.formInput{
+background-color: red;
+display:flex;
+flex-flow: row column;
+align-items: center;
+height: 50px;}
+/*----------------------------------Indicadores----------------------------------------------*/
+$color:red;
+.ParrafoCard{
+    @if ($color == azul) {
+        color: blue;
+    }@else{
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+  }
+ 
+
+
+  /*--------------------------------lista de footer-----------------------------------------------------*/
+ 
+  ul {
+    list-style: none;
+    
+
+.listaFooter {
+    margin-top: 10px;
+    text-align: center;  
+    margin-right: 30px;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+  }
+}
+
+
+/*----------------------------------------HoverMenu------------------------------------------*/
+.menuTexto:hover{
+    background-color: yellow;
+    margin-right: 10px;
+    color: white;
+}
+/*
+.navbar{
+  
+
+    .nav-item {
+        color: brown;
+    
+        .nav-link {
+           
+            font-size:16px;
+          
+        }
+    }
+}
+*/

@@ -1,0 +1,986 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1100%;
+    background: #848b92;  
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+}
+
+.wave{
+   margin-top: 100px;
+   height: 100px;
+   width: 100%;
+}
+
+.contenedorSomos{
+    animation: movimiento 2.5s linear infinite;
+}
+@keyframes movimiento {
+0%{
+        transform: translateY(0);
+    }
+50%{
+        transform: translateY(30px);
+    }
+100%{
+        transform: translateY(30px);
+  }
+}
+
+.container-fluid{
+ height: 100px;
+    
+}
+.navbar{
+    margin-left: 50px;
+}
+
+.d-flex{
+    margin-right: 50px;
+}
+/*---------------------------------------------------Header-------------------------------------*/
+.contenedorPadre{
+  
+    /*--------------contenedor header--------------*/
+    .contenedorPadre__Header--principal{
+  
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;  
+      
+      }
+  
+  
+               
+  .contenedorPadre__Header__textoPrincipal--uppercase{                 
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+               
+  .contenedorTituloPrincipal{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  
+  
+  .TituloPrincipalNews{
+    text-align: center;
+   }
+   
+  }  /*-------llave de contenedor textoprincipal--uppercase--------------*/  
+  }/*---------------llave de contenedortituloPrincipal---*/
+    
+  .contenedorSomosComunidad{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  }
+  .contenedorGrillaFav{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  }
+  .radioFav{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #393b3d;
+  .contenedorCaratula{
+  background: url(../imagenes/elClubDelMoro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+  .contenedorTituloStacion{
+  display: grid;
+  grid-template-rows: 1fr 2fr ;
+  
+  
+  }
+  }
+  
+  .podcastFav{
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #393b3d;
+  .contenedorCaratula{
+  background: url(../imagenes/elClubDelMoro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;}
+     
+  
+  .contenedorTituloStacion{
+  display: grid;
+  grid-template-rows: 1fr 2fr ;
+  }
+  }
+  .eventoDelMes{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  
+  background-color: #393b3d;
+  }
+  .contenedorCaratula{
+      background: url(../imagenes/elClubDelMoro.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;}
+         
+      
+  .contenedorTituloStacion{
+  display: grid;
+  grid-template-rows: 1fr 2fr ;}
+  
+   
+     
+  
+  .contenedorIcono{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+}/*----------esta es llave de contenedorpadre-------*/
+
+/*-----------------------main comunidad-----------------------------------------------*/
+.contenedorMain{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+      } 
+            
+ .contenedorMain__comunidad--blanco{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+     } 
+
+.contenedorMain__comunidad__collage--mobil{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-auto-flow: dense;
+    gap:10px;
+    } 
+.imgComunidadRadio{
+background: url(../imagenes/equipo03.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 200%;
+    }
+.imgComunidadPodcast{
+background: url(../imagenes/equipo02.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 200%;
+
+
+    }
+.imgComunidadTelevision{
+background: url(../imagenes/equipo04.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 200%;
+ }
+
+
+  
+   
+ 
+.contenedorMain_comunidad__tituloComunidad--secundario{
+display: flex;
+align-items: center;
+justify-content: center;  
+background: url(../imagenes/comunidad.png); 
+background-position: right;
+background-repeat: no-repeat;
+background-size: 50%;
+height: 500px;
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------NovedadesComunidad----------------------------*/
+.contenedorMain__novedades--centrado{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+   
+  
+.contenedorMain__novedades__TituloNovedades{
+width: 50%;
+margin: 20px;
+margin-left:30px;
+height: 200px;
+
+}
+          
+     
+.ParrafoCard{
+height: 100px;
+width: 85%;
+margin-top: 20px;
+text-align: justify; 
+  
+    
+    }
+    
+.btnSecundario{
+margin-top: 30px;}
+
+
+.cardEspectactulo{
+height:400px;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+background-color: #393b3d;
+
+
+.imagenCard{
+background: url(../imagenes/novedades.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%;
+height: 350px;
+width: 100%;
+border-top:40px; }  
+ }  
+                    
+.cardMundoCine{
+height:400px;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+background-color: #393b3d;
+
+      
+    
+.imagenCard{
+background: url(../imagenes/novedades.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%;
+height: 350px;
+width: 100%;
+border-top:40px;}                  
+    }
+.cardCultura{
+height:400px;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+background-color: #393b3d;
+     
+.imagenCard{
+background: url(../imagenes/novedades.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 150%;
+height: 350px;
+width: 100%;
+border-top:40px;
+
+    }                  
+    }
+    
+         
+} /*---------------llave del contenedorMain_novedades-----------------------*/  
+               
+
+/*-----------------ContenedorNewsletter---------------*/
+
+.contenedorMain__newsletter{
+
+display: grid;
+gap: 10px;
+margin-top: 40px;
+}
+
+.contenedorNew{
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: center;
+}
+.contenedorTituloNewsLetter{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.contenedorNewsContenido{
+
+display: grid;
+gap: 10px;
+.contenedorCultura{
+background: url(../imagenes/somosComunidad.jpg);
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.contenedorSocial{
+    background: url(../imagenes/articuloestación.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.contenedorEquipoSomos{
+    background: url(../imagenes/comunidadSomos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+
+/*--------------descarga----------------*/
+
+footer{
+           
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+                  
+    .logFooter{
+                    
+    height: 170px;
+    flex:  2 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .logoFooter{
+    width: 90px;                  
+    }
+
+                       
+  }
+    
+    .menuFooter{
+                  
+    height: 170px;
+    flex:  1 1 auto;
+    }
+    .redesFooter{
+    height: 170px;
+    display: flex;
+    flex:  2 1 auto;
+    align-items: center;
+    justify-content: center;             
+                   
+    .logosRedesFooter{                     
+
+    .enlaceRedes {
+    color: white;
+  
+           
+}
+                         
+  }
+ }
+}
+
+
+
+ 
+/*-----------------------comunidadMain----------------------------------*/
+
+@media only screen and (min-width:1201px){
+.contenedorPadre{
+    .contenedorPadre__Header--principal{
+        height: 1600px;
+        display: flex;
+        flex-flow: column nowrap;
+        }
+}
+.contenedorNaverHeader{
+display: flex;
+flex-flow: column nowrap;
+width: 100%;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(210, 3%, 26%, 0.555), hsla(200, 4%, 14%, 0.555)), url(../imagenes/fondoHeaderTitulo.png); 
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+
+
+$titulos:(
+  h1:4em,
+  h2:3em,
+  h3:2em,
+  h4:1em,
+ 
+);
+
+$h1: map-get($titulos, h1);
+h1{
+   font-size: $h1;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: white;
+}
+
+$h2: map-get($titulos, h2);
+h2{
+   font-size: $h2;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: white;
+}
+
+$h3: map-get($titulos, h3);
+h3{
+   font-size: $h3;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: white;
+}
+
+$h4: map-get($titulos, h4);
+h4{
+   font-size: $h4;
+   font-family: 'Lato', sans-serif;
+   color: white;
+}
+
+
+.TituloComunidad{
+    width: 80%;
+}
+
+.contenedorPadre__Header--principal{
+height: 1700px;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;  
+
+}
+
+
+.contenedorPadre__Header__textoPrincipal--uppercase{
+height: 550px;
+width: 100%;
+/*margin-top:250px;*/
+
+}
+.contenedorTituloPrincipal{
+height: 300px;
+width: 60%;
+}
+.contenedorSomosComunidad{
+height: 1100px;
+
+}
+
+.contenedorGrillaFav{
+gap: 20px;
+width: 60%;}
+.radioFav{
+gap: 10px;
+.contenedorCaratula{
+background-size: 100%;}
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-top: 40px;
+margin-left: 12px;
+}
+}
+.favRadio{ 
+.favRadioTitulo{
+margin-left: 15px; }
+}
+ }
+
+        
+.podcastFav{
+gap: 10px;
+background-color: #393b3d;
+.contenedorCaratula{
+background: url(../imagenes/elClubDelMoro.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+           
+        
+.contenedorTituloStacion{
+
+gap: 5px;
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-top: 40px;
+margin-left: 12px;
+    }
+}
+.favRadio{ 
+.favRadioTitulo{
+ margin-left: 15px; }
+    }
+ }
+        
+}
+.eventoDelMes{
+gap: 10px;
+}
+.contenedorCaratula{
+background: url(../imagenes/elClubDelMoro.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+               
+            
+.contenedorTituloStacion{         
+gap: 5px;
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-top: 40px;
+margin-left: 12px;
+}
+}
+.favRadio{ 
+.favRadioTitulo{
+margin-left: 15px; }
+}
+}
+    
+
+
+         
+/*---------------------NOVEDADES------------------*/
+
+.contenedorCard{
+width: 50%;
+height: 500px;
+display: flex;
+margin-top: 30px;
+flex-flow: row nowrap; }
+
+                 
+.cardMundoCine{
+margin-left: 30px;
+margin-right: 30px;}
+    
+
+ /*------------------NewsLetter----------------*/
+ .contenedorMain__newsletter{
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 500px;
+gap: 10px;
+}
+
+.contenedorNew{
+height: 500px;
+
+.newsLetterTitulo{
+width: 70%;
+}
+}
+.contenedorNewsContenido{
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+height: 500px;
+
+}  
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 250px;
+}
+
+
+
+
+
+}/*----------------------llaveMAIN------------------------*/
+ 
+
+
+                    
+
+
+  
+
+
+
+  @media only screen and (min-width:601px) and (max-width:1200px){
+.contenedorPadre{
+.contenedorPadre__Header--principal{
+ height: 1400px;
+display: flex;
+flex-flow: column nowrap;
+        }
+    }
+    
+.contenedorNaverHeader{
+      
+display: flex;
+flex-flow: column nowrap;
+width: 100%;
+background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(260, 100%, 44%, 0.603), hsla(272, 76%, 53%, 0.603)), url(../imagenes/fondoHeaderTitulo.png); 
+background-position: center;
+background-repeat: no-repeat;
+background-size: 200%;
+height: 500px;
+    
+}
+
+$titulo:(
+h1:3em,
+h2:2.5em,
+h3:2em,
+h4:1em,
+       
+);
+      
+$h1: map-get($titulo, h1);
+h1{
+font-size: $h1;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+}
+      
+$h2: map-get($titulo, h2);
+h2{
+font-size: $h2;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+        
+}
+      
+$h3: map-get($titulo, h3);
+h3{
+font-size: $h3;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+         
+}
+      
+$h4: map-get($titulo, h4);
+h4{
+font-size: $h4;
+color: white;
+        
+}
+      
+.contenedorPadre__Header__textoPrincipal--uppercase{
+margin-top: 50px;
+}
+
+.TituloPrincipalNews{
+width: 60%;
+}
+
+.contenedorSomosComunidad{
+margin-top: 70px;
+}
+
+
+
+.contenedorGrillaFav{
+gap: 20px;
+width: 90%;}
+.radioFav{
+gap: 10px;
+.contenedorCaratula{
+ background-size: 100%;}
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-left: 5px;
+}
+}
+.favRadio{ 
+.favRadioTitulo{
+margin-left: 15px; }
+color: white;
+  }
+}
+    
+            
+.podcastFav{
+gap: 10px;
+background-color: #393b3d;
+.contenedorCaratula{
+background: url(../imagenes/elClubDelMoro.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+               
+            
+.contenedorTituloStacion{
+    
+gap: 5px;
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-top: 40px;
+margin-left: 12px;
+ }
+}
+.favRadio{ 
+.favRadioTitulo{
+margin-left: 15px; }
+}
+}
+            
+}
+.eventoDelMes{
+gap: 10px;
+}
+.contenedorCaratula{
+background: url(../imagenes/elClubDelMoro.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;}
+                   
+                
+.contenedorTituloStacion{             
+gap: 5px;
+.contenedorTituloFavRadio{ 
+.favDelmes{
+margin-top: 40px;
+margin-left: 12px;
+}
+}
+.favRadio{ 
+.favRadioTitulo{
+margin-left: 15px; }
+}
+}
+        
+    
+    
+
+.contenedorMain__comunidad--blanco{
+display: flex;
+flex-flow: column nowrap;
+height:800px;
+}
+
+.contenedorMain_comunidad__tituloComunidad--secundario{
+margin-top: 20px;
+height: 400px; 
+}
+
+
+
+.contenedorMain__novedades--centrado{
+margin-top: 100px;
+}
+  
+
+.contenedorCard{
+margin: 20px;    
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+width: 40%;}
+
+.cardEspectactulo{
+margin-top: 40px; }
+
+.cardMundoCine{
+margin-top: 40px; }
+.cardCultura{
+margin-top: 40px; }
+
+.contenedorMain__newsletter{
+display: grid;
+grid-template-rows: 1fr 1fr;
+height: 800px;
+gap: 10px;
+}
+
+.contenedorNew{
+height: 400px;
+}
+.contenedorTituloNewsLetter{
+width: 60%;
+}
+.newsLetterTitulo{
+    text-align: center;
+}
+.contenedorNewsContenido{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+height: 400px;
+
+}
+
+
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 250px;
+}
+
+}/*padre*/
+
+
+@media only screen and (max-width:600px){
+
+$titulo:(
+h1:3em,
+h2:1.5em,
+h3:1.3em,
+h4:1.1em,
+       
+);
+      
+$h1: map-get($titulo, h1);
+h1{
+font-size: $h1;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+}
+      
+$h2: map-get($titulo, h2);
+h2{
+font-size: $h2;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+        
+}
+      
+$h3: map-get($titulo, h3);
+h3{
+font-size: $h3;
+font-family: 'Roboto Condensed', sans-serif;
+color: white;
+         
+}
+      
+$h4: map-get($titulo, h4);
+h4{
+font-size: $h4;
+color: white;
+        
+}
+
+.contenedorPadre{
+.contenedorPadre__Header--principal{
+height: 750px;
+display: flex;
+flex-flow: column nowrap;
+}
+}
+.contenedorPadre__Header__textoPrincipal--uppercase{           
+margin-top: 30px;    
+                              
+.contenedorTituloPrincipal{
+ margin-top: 30px;
+} 
+}
+
+.contenedorTituloPrincipal{
+     margin-bottom: 50px;
+ }
+ .contenedorGrillaFav{
+    gap: 10px; 
+}
+.contenedorTituloStacion{
+    margin-left: 15px;
+}
+
+
+
+.contenedorMain{
+margin-bottom: 100px;
+}
+
+.contenedorMain__comunidad--blanco{
+display: flex;
+flex-flow: column nowrap;
+.contenedorMain_comunidad__tituloComunidad--secundario{
+
+height: 300px;
+
+.contenedorTitulosComunidad{
+height: 300px;
+}
+      
+}
+}
+
+.contenedorMain__novedades--centrado{
+ margin-top:50px;
+}
+
+.contenedorCard{
+margin: 20px;    
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+width: 70%;}
+
+.cardEspectactulo{
+margin-top: 10px; }
+
+.cardMundoCine{
+margin-top: 40px;
+ }
+
+
+.cardCultura{
+margin-top: 40px; }
+
+.contenedorMain__newsletter{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+    gap: 10px;
+    }
+    
+    .contenedorNew{
+    height: 300px;
+    }
+    .contenedorTituloNewsLetter{
+    width: 80%;
+    }
+    .newsLetterTitulo{
+        text-align: center;
+    }
+    .contenedorNewsContenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    }
+    .footer{
+    display: flex;
+    flex-flow:column nowrap;
+    height:450px;
+    align-items: center;
+    margin-top: 60px;
+     }             
+  }/*padre*/

@@ -1,0 +1,2300 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1100%;
+  background: #393b3d;
+  background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
+  background: linear-gradient(to right, #414345, #232526);
+}
+
+.wave {
+  margin-top: 100px;
+  height: 100px;
+  width: 100%;
+}
+
+.contenedorSomos {
+  -webkit-animation: movimiento 2.5s linear infinite;
+          animation: movimiento 2.5s linear infinite;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+.container-fluid {
+  height: 100px;
+}
+
+.navbar {
+  margin-left: 50px;
+}
+
+.d-flex {
+  margin-right: 50px;
+}
+
+/*---------------------------------------------------Header-------------------------------------*/
+.contenedorPadre {
+  /*--------------contenedor header--------------*/
+  /*---------------llave de contenedortituloPrincipal---*/
+}
+
+.contenedorPadre .contenedorPadre__Header--principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorPadre .contenedorPadre__Header__textoPrincipal--uppercase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*-------llave de contenedor textoprincipal--uppercase--------------*/
+}
+
+.contenedorPadre .contenedorPadre__Header__textoPrincipal--uppercase .contenedorTituloPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorPadre .contenedorPadre__Header__textoPrincipal--uppercase .contenedorTituloPrincipal .TituloPrincipalNews {
+  text-align: center;
+}
+
+.contenedorPadre .contenedorSomosComunidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contenedorPadre .contenedorGrillaFav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.contenedorPadre .radioFav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  background-color: #393b3d;
+}
+
+.contenedorPadre .radioFav .contenedorCaratula {
+  background: url(../imagenes/elClubDelMoro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contenedorPadre .radioFav .contenedorTituloStacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.contenedorPadre .podcastFav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  background-color: #393b3d;
+}
+
+.contenedorPadre .podcastFav .contenedorCaratula {
+  background: url(../imagenes/elClubDelMoro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contenedorPadre .podcastFav .contenedorTituloStacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.contenedorPadre .eventoDelMes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  background-color: #393b3d;
+}
+
+.contenedorPadre .contenedorCaratula {
+  background: url(../imagenes/elClubDelMoro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contenedorPadre .contenedorTituloStacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.contenedorPadre .contenedorIcono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*----------esta es llave de contenedorpadre-------*/
+/*-----------------------main comunidad-----------------------------------------------*/
+.contenedorMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorMain__comunidad--blanco {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contenedorMain__comunidad__collage--mobil {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+
+.imgComunidadRadio {
+  background: url(../imagenes/equipo03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.imgComunidadPodcast {
+  background: url(../imagenes/equipo02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.imgComunidadTelevision {
+  background: url(../imagenes/equipo04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.contenedorMain_comunidad__tituloComunidad--secundario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../imagenes/comunidad.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 500px;
+}
+
+/*---------------------------------------------------NovedadesComunidad----------------------------*/
+.contenedorMain__novedades--centrado {
+  width: 100%;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorMain__novedades--centrado .contenedorMain__novedades__TituloNovedades {
+  width: 50%;
+  margin: 20px;
+  margin-left: 30px;
+  height: 200px;
+}
+
+.contenedorMain__novedades--centrado .ParrafoCard {
+  height: 100px;
+  width: 85%;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.contenedorMain__novedades--centrado .btnSecundario {
+  margin-top: 30px;
+}
+
+.contenedorMain__novedades--centrado .cardEspectactulo {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #393b3d;
+}
+
+.contenedorMain__novedades--centrado .cardEspectactulo .imagenCard {
+  background: url(../imagenes/novedades.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 350px;
+  width: 100%;
+  border-top: 40px;
+}
+
+.contenedorMain__novedades--centrado .cardMundoCine {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #393b3d;
+}
+
+.contenedorMain__novedades--centrado .cardMundoCine .imagenCard {
+  background: url(../imagenes/novedades.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 350px;
+  width: 100%;
+  border-top: 40px;
+}
+
+.contenedorMain__novedades--centrado .cardCultura {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #393b3d;
+}
+
+.contenedorMain__novedades--centrado .cardCultura .imagenCard {
+  background: url(../imagenes/novedades.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 350px;
+  width: 100%;
+  border-top: 40px;
+}
+
+/*---------------llave del contenedorMain_novedades-----------------------*/
+/*-----------------ContenedorNewsletter---------------*/
+.contenedorMain__newsletter {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.contenedorNew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorTituloNewsLetter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorNewsContenido {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.contenedorNewsContenido .contenedorCultura {
+  background: url(../imagenes/somosComunidad.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenedorNewsContenido .contenedorSocial {
+  background: url(../imagenes/articuloestación.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenedorNewsContenido .contenedorEquipoSomos {
+  background: url(../imagenes/comunidadSomos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*--------------descarga----------------*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+footer .logFooter {
+  height: 170px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .logFooter .logoFooter {
+  width: 90px;
+}
+
+footer .menuFooter {
+  height: 170px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+footer .redesFooter {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .redesFooter .logosRedesFooter .enlaceRedes {
+  color: white;
+}
+
+/*-----------------------comunidadMain----------------------------------*/
+@media only screen and (min-width: 1201px) {
+  .contenedorPadre .contenedorPadre__Header--principal {
+    height: 1600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorNaverHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    background: #232526;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(64, 66, 68, 0.555)), to(rgba(34, 36, 37, 0.555))), url(../imagenes/fondoHeaderTitulo.png);
+    background: linear-gradient(to right, rgba(64, 66, 68, 0.555), rgba(34, 36, 37, 0.555)), url(../imagenes/fondoHeaderTitulo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  h1 {
+    font-size: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h2 {
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h3 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h4 {
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+  }
+  .TituloComunidad {
+    width: 80%;
+  }
+  .contenedorPadre__Header--principal {
+    height: 1700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedorPadre__Header__textoPrincipal--uppercase {
+    height: 550px;
+    width: 100%;
+    /*margin-top:250px;*/
+  }
+  .contenedorTituloPrincipal {
+    height: 300px;
+    width: 60%;
+  }
+  .contenedorSomosComunidad {
+    height: 1100px;
+  }
+  .contenedorGrillaFav {
+    gap: 20px;
+    width: 60%;
+  }
+  .radioFav {
+    gap: 10px;
+  }
+  .radioFav .contenedorCaratula {
+    background-size: 100%;
+  }
+  .radioFav .contenedorTituloFavRadio .favDelmes {
+    margin-top: 40px;
+    margin-left: 12px;
+  }
+  .radioFav .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  .podcastFav {
+    gap: 10px;
+    background-color: #393b3d;
+  }
+  .podcastFav .contenedorCaratula {
+    background: url(../imagenes/elClubDelMoro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .podcastFav .contenedorTituloStacion {
+    gap: 5px;
+  }
+  .podcastFav .contenedorTituloStacion .contenedorTituloFavRadio .favDelmes {
+    margin-top: 40px;
+    margin-left: 12px;
+  }
+  .podcastFav .contenedorTituloStacion .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  .eventoDelMes {
+    gap: 10px;
+  }
+  .contenedorCaratula {
+    background: url(../imagenes/elClubDelMoro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .contenedorTituloStacion {
+    gap: 5px;
+  }
+  .contenedorTituloStacion .contenedorTituloFavRadio .favDelmes {
+    margin-top: 40px;
+    margin-left: 12px;
+  }
+  .contenedorTituloStacion .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  /*---------------------NOVEDADES------------------*/
+  .contenedorCard {
+    width: 50%;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .cardMundoCine {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /*------------------NewsLetter----------------*/
+  .contenedorMain__newsletter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 500px;
+    gap: 10px;
+  }
+  .contenedorNew {
+    height: 500px;
+  }
+  .contenedorNew .newsLetterTitulo {
+    width: 70%;
+  }
+  .contenedorNewsContenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 500px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: 250px;
+  }
+}
+
+/*----------------------llaveMAIN------------------------*/
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .contenedorPadre .contenedorPadre__Header--principal {
+    height: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorNaverHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(75, 0, 224, 0.603)), to(rgba(141, 44, 226, 0.603))), url(../imagenes/fondoHeaderTitulo.png);
+    background: linear-gradient(to right, rgba(75, 0, 224, 0.603), rgba(141, 44, 226, 0.603)), url(../imagenes/fondoHeaderTitulo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 500px;
+  }
+  h1 {
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h2 {
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h3 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h4 {
+    font-size: 1em;
+    color: white;
+  }
+  .contenedorPadre__Header__textoPrincipal--uppercase {
+    margin-top: 50px;
+  }
+  .TituloPrincipalNews {
+    width: 60%;
+  }
+  .contenedorSomosComunidad {
+    margin-top: 70px;
+  }
+  .contenedorGrillaFav {
+    gap: 20px;
+    width: 90%;
+  }
+  .radioFav {
+    gap: 10px;
+  }
+  .radioFav .contenedorCaratula {
+    background-size: 100%;
+  }
+  .radioFav .contenedorTituloFavRadio .favDelmes {
+    margin-left: 5px;
+  }
+  .radioFav .favRadio {
+    color: white;
+  }
+  .radioFav .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  .podcastFav {
+    gap: 10px;
+    background-color: #393b3d;
+  }
+  .podcastFav .contenedorCaratula {
+    background: url(../imagenes/elClubDelMoro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .podcastFav .contenedorTituloStacion {
+    gap: 5px;
+  }
+  .podcastFav .contenedorTituloStacion .contenedorTituloFavRadio .favDelmes {
+    margin-top: 40px;
+    margin-left: 12px;
+  }
+  .podcastFav .contenedorTituloStacion .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  .eventoDelMes {
+    gap: 10px;
+  }
+  .contenedorCaratula {
+    background: url(../imagenes/elClubDelMoro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .contenedorTituloStacion {
+    gap: 5px;
+  }
+  .contenedorTituloStacion .contenedorTituloFavRadio .favDelmes {
+    margin-top: 40px;
+    margin-left: 12px;
+  }
+  .contenedorTituloStacion .favRadio .favRadioTitulo {
+    margin-left: 15px;
+  }
+  .contenedorMain__comunidad--blanco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 800px;
+  }
+  .contenedorMain_comunidad__tituloComunidad--secundario {
+    margin-top: 20px;
+    height: 400px;
+  }
+  .contenedorMain__novedades--centrado {
+    margin-top: 100px;
+  }
+  .contenedorCard {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .cardEspectactulo {
+    margin-top: 40px;
+  }
+  .cardMundoCine {
+    margin-top: 40px;
+  }
+  .cardCultura {
+    margin-top: 40px;
+  }
+  .contenedorMain__newsletter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    height: 800px;
+    gap: 10px;
+  }
+  .contenedorNew {
+    height: 400px;
+  }
+  .contenedorTituloNewsLetter {
+    width: 60%;
+  }
+  .newsLetterTitulo {
+    text-align: center;
+  }
+  .contenedorNewsContenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    height: 400px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: 250px;
+  }
+}
+
+/*padre*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h3 {
+    font-size: 1.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h4 {
+    font-size: 1.1em;
+    color: white;
+  }
+  .contenedorPadre .contenedorPadre__Header--principal {
+    height: 750px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorPadre__Header__textoPrincipal--uppercase {
+    margin-top: 30px;
+  }
+  .contenedorPadre__Header__textoPrincipal--uppercase .contenedorTituloPrincipal {
+    margin-top: 30px;
+  }
+  .contenedorTituloPrincipal {
+    margin-bottom: 50px;
+  }
+  .contenedorGrillaFav {
+    gap: 10px;
+  }
+  .contenedorTituloStacion {
+    margin-left: 15px;
+  }
+  .contenedorMain {
+    margin-bottom: 100px;
+  }
+  .contenedorMain__comunidad--blanco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario {
+    height: 300px;
+  }
+  .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario .contenedorTitulosComunidad {
+    height: 300px;
+  }
+  .contenedorMain__novedades--centrado {
+    margin-top: 50px;
+  }
+  .contenedorCard {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+  .cardEspectactulo {
+    margin-top: 10px;
+  }
+  .cardMundoCine {
+    margin-top: 40px;
+  }
+  .cardCultura {
+    margin-top: 40px;
+  }
+  .contenedorMain__newsletter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    height: 600px;
+    gap: 10px;
+  }
+  .contenedorNew {
+    height: 300px;
+  }
+  .contenedorTituloNewsLetter {
+    width: 80%;
+  }
+  .newsLetterTitulo {
+    text-align: center;
+  }
+  .contenedorNewsContenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+  }
+}
+
+/*padre*/
+/*-------------------------ENLACES A-------------------------------*/
+/*-----------------------BtnPrincipal tablet y escritorio----------------------------*/
+a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contenedorTituloPrincipal__btnPrincipal--azul {
+  margin-top: 20px;
+}
+
+.contenedorTituloPrincipal__btnPrincipal--azul .btnPrincipal {
+  text-decoration: none;
+  color: #393b3d;
+  font-size: 14px;
+  background-color: yellow;
+  padding: 10px 60px;
+  border-radius: 20px;
+}
+
+.contenedorTituloPrincipal__btnPrincipal--azul .btnPrincipal:hover {
+  background-color: #393b3d;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+}
+
+.play {
+  width: 100px;
+}
+
+.play:hover {
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+.logoFooter {
+  width: 90px;
+}
+
+/*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
+.btnSecundarioComunidad {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 40px;
+}
+
+.btnSecundarioComunidades {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.btnSecundarioNovedades {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnNovedades {
+  text-decoration: none;
+  color: #393b3d;
+  font-size: 16px;
+  background-color: #e9e8e8;
+  padding: 10px 70px;
+}
+
+.btnNovedades:hover {
+  background-color: yellow;
+  color: #393b3d;
+}
+
+.btnSecundario {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnComunidad {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border: yellow 1.5;
+  border-style: solid;
+  padding: 10px 60px;
+  border-radius: 20px;
+}
+
+.btnComunidad:hover {
+  background-color: yellow;
+  color: #393b3d;
+  border: none;
+}
+
+.btnDescarga {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+  border: blue 1.5;
+  border-style: solid;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.btnDescarga:hover {
+  background-color: blue;
+  border: blue;
+  color: white;
+}
+
+.btnEventos {
+  text-decoration: none;
+  color: #393b3d;
+  font-size: 14px;
+  background-color: white;
+  padding: 10px 60px;
+  border-radius: 20px;
+}
+
+.btnEventos:hover {
+  background-color: yellow;
+  color: #393b3d;
+}
+
+.NewsTitulo {
+  color: white;
+}
+
+.tituloChicoNovedad {
+  color: white;
+  margin-right: 170px;
+}
+
+/*------navAfter-----*/
+.navbar-nav {
+  margin-left: 140px;
+}
+
+.nav-item {
+  position: relative;
+  margin-right: 25px;
+}
+
+.nav-item a::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+}
+
+.nav-item a.selected::after,
+.nav-item a:hover::after {
+  opacity: 1;
+}
+
+/*-------------Redesfooter-------------*/
+/*-------------------indicadoresGenerales ------------------*/
+.ParrafoSomos {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .contenedorMain_comunidad__tituloComunidad--secundario {
+    background-color: palegreen;
+    height: 600px;
+  }
+  .btnSecundario .btnComunidad {
+    border: solid white 1.2px;
+    padding: 10px 30px;
+    color: white;
+  }
+  .btnSecundario .btnComunidad:hover {
+    color: white;
+  }
+}
+
+/*----------------------------------Imput Newsletter---------------------------------------*/
+.formInput {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row column;
+          flex-flow: row column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+/*----------------------------------Indicadores----------------------------------------------*/
+.ParrafoCard {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------------lista de footer-----------------------------------------------------*/
+ul {
+  list-style: none;
+}
+
+ul .listaFooter {
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+ul .listaFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------------------------------------HoverMenu------------------------------------------*/
+.menuTexto:hover {
+  background-color: yellow;
+  margin-right: 10px;
+  color: white;
+}
+
+/*
+.navbar{
+  
+
+    .nav-item {
+        color: brown;
+    
+        .nav-link {
+           
+            font-size:16px;
+          
+        }
+    }
+}
+*/
+/*-----------------------------QUIENES SOMOS-----------------------------*/
+.contenedorPadre__Header--Somos {
+  height: 100px;
+}
+
+.contenedorPadre__Header--principal {
+  height: 200px;
+}
+
+/*
+.contenedorMain_somos--centro{
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorMainSomosCarrousel{
+  display: flex;
+  flex-flow: row wrap;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+}*/
+.casitodos {
+  width: 450px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.casitodos-1 {
+  width: 360px;
+}
+
+.casitodos-2 {
+  width: 720px;
+}
+
+.casitodos-3 {
+  width: 1080px;
+}
+
+.casitodos-4 {
+  width: 1440px;
+}
+
+.collage {
+  background: url(../imagenes/equipo02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 250px;
+}
+
+.ParrafoNovedades {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.tituloEventos {
+  color: white;
+  width: 60%;
+}
+
+.ParrafoNovedades {
+  color: black;
+}
+
+/*------------------NOVEDADES----------------------------------------*/
+.contenedorMainNovedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*-----------------LLAVE DE ContenedorMainNovedades----------------*/
+.conciertos {
+  background: url(../imagenes/articuloestación.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.entrevistas {
+  background: url(../imagenes/articuloestación.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.livestreaming {
+  background: url(../imagenes/articuloestación.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*
+  .containerImgConcierto{
+    background: url(../imagenes/novedades.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    border-radius: 10px;
+
+  }
+  */
+conciertos {
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 355px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contenedorEventos {
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .livestreaming {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white;
+  }
+  .contenedorMainNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 900px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorEventos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px;
+    background-color: plum;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px;
+  }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px;
+  }
+  /*-----------------Descarga------------*/
+  .descargaAppPagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .imgDescarga img {
+    width: 350px;
+  }
+}
+
+entrevistas {
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 355px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contenedorEventos {
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .livestreaming {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white;
+  }
+  .contenedorMainNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 900px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorEventos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px;
+    background-color: plum;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px;
+  }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px;
+  }
+  /*-----------------Descarga------------*/
+  .descargaAppPagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .imgDescarga img {
+    width: 350px;
+  }
+}
+
+livestreaming {
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 355px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contenedorEventos {
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .livestreaming {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white;
+  }
+  .contenedorMainNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 900px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contenedorEventos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px;
+    background-color: plum;
+  }
+  .conciertos {
+    height: 330px;
+  }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px;
+  }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px;
+  }
+  /*-----------------Descarga------------*/
+  .descargaAppPagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .imgDescarga img {
+    width: 350px;
+  }
+}
+
+/*-------------Descarga ------------ */
+.descargaAppPagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 60px;
+}
+
+.descargaapp {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tituloPrincipalDescarga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloDescarga {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.parrafoDescarga {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.imgDescarga img {
+  width: 650px;
+  padding: 30px;
+}
+
+/*----------------Registrate ---------------*/
+.mainRegistro {
+  height: 550px;
+  background-image: url(../imagenes/registro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fondoRegistrate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(217, 217, 217, 0.39);
+  border-radius: 30px;
+  width: 500px;
+  padding: 20px;
+}
+
+.registroTituloPrincipal {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  text-align: center;
+}
+
+.nombresFormulario h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 05px;
+}
+
+input {
+  padding: 05px 10px;
+  margin: 05px;
+}
+
+.inputRegistro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.inputSubmit {
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.contenedorPadre__Header--Somos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.contenedorTituloComunidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parrafoComunidad {
+  color: white;
+  text-align: center;
+  background-color: powderblue;
+}
+
+.contenedorMainComunidades {
+  display: -ms-grid;
+  display: grid;
+}
+
+.comunidadCulturaRadio {
+  background-color: palegreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h2Radio {
+  text-align: center;
+}
+
+.parrafoRadioCultura {
+  text-align: center;
+}
+
+.comunidadCulturaPodcast {
+  background-color: paleturquoise;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comunidadCulturaTelevisión {
+  background-color: paleturquoise;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*---------------comunidades -----------------*/
+.contenedorMainRadio {
+  display: -ms-grid;
+  display: grid;
+}
+
+.latinoAmerica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.norteAmerica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.europa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.asia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1201px) {
+  .contenedorPadre__Header--Somos {
+    height: 300px;
+  }
+  .contenedorTituloComunidad {
+    height: 200px;
+  }
+  .parrafoComunidad {
+    color: white;
+    font-size: 16px;
+  }
+  .contenedorMainComunidades {
+    background-color: peachpuff;
+    height: 320px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .comunidadCulturaRadio {
+    background-color: palegreen;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .culturaRadioTitulo {
+    width: 70%;
+  }
+  .comunidadCulturaPodcast {
+    background-color: paleturquoise;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comunidadCulturaTelevisión {
+    background-color: paleturquoise;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*-------------------comunidades------------------*/
+  .contenedorMainRadio {
+    background-color: powderblue;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    height: 700px;
+    gap: 10px;
+  }
+  .latinoAmerica {
+    background-color: palegreen;
+  }
+  .norteAmerica {
+    background-color: palegreen;
+  }
+  .europa {
+    background-color: palegreen;
+  }
+  .asia {
+    background-color: palegreen;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .contenedorPadre__Header--Somos {
+    height: 300px;
+  }
+  .tituloComunidadesNews {
+    margin-top: 30px;
+  }
+  .parrafoRadioCultura {
+    text-align: center;
+  }
+  .contenedorMainComunidades {
+    background-color: peachpuff;
+    height: 720px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  /*-----------------------comunidades----------------*/
+  .contenedorMainRadio {
+    background-color: powderblue;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 1200px;
+    gap: 10px;
+  }
+  .latinoAmerica {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .norteAmerica {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .europa {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .asia {
+    background-color: plum;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h2 {
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h3 {
+    font-size: 1.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+  h4 {
+    font-size: 1.1em;
+    color: white;
+  }
+  .contenedorPadre__Header--Somos {
+    height: 300px;
+  }
+  .tituloComunidadesNews {
+    margin-top: 30px;
+  }
+  .parrafoRadioCultura {
+    text-align: center;
+    background-color: papayawhip;
+  }
+  .contenedorMainComunidades {
+    background-color: peachpuff;
+    height: 720px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  /*------------comunidades--------------------*/
+  .contenedorMainRadio {
+    background-color: powderblue;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 1200px;
+    gap: 10px;
+  }
+  .latinoAmerica {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .norteAmerica {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .europa {
+    background-color: palegreen;
+    height: 300px;
+  }
+  .asia {
+    background-color: plum;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

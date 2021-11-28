@@ -1,0 +1,342 @@
+
+  
+  /*-----------------------------QUIENES SOMOS-----------------------------*/
+
+  .contenedorPadre__Header--Somos{ 
+    height: 100px;
+    
+}
+
+.contenedorPadre__Header--principal{
+ height: 200px;
+}
+
+/*
+.contenedorMain_somos--centro{
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorMainSomosCarrousel{
+  display: flex;
+  flex-flow: row wrap;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+}*/
+
+$ancho: 720px;
+
+
+.casitodos{
+    width: 450px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+
+
+@for $i from 1 through 4 {
+  .casitodos-#{$i} { width:( $ancho/2)  * $i; }
+}
+
+.collage{
+   background: url(../imagenes/equipo02.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 250px;
+}
+
+
+.ParrafoNovedades{
+    width:80%;
+    background-color: hsla(0, 0%, 100%, 0.507);
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.tituloEventos{
+  color: white;
+  width: 60%;
+}
+
+ 
+$parrafo:red;
+
+.ParrafoNovedades{
+@if ($parrafo == azul) {
+    color: blue;
+}@else{
+    color:  black;
+}
+}
+
+
+/*------------------NOVEDADES----------------------------------------*/
+.contenedorMainNovedades{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  
+
+    }/*-----------------LLAVE DE ContenedorMainNovedades----------------*/
+  
+  
+   
+  
+  .conciertos{
+    background: url(../imagenes/articuloestación.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .entrevistas{
+    background: url(../imagenes/articuloestación.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .livestreaming{
+    background: url(../imagenes/articuloestación.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  /*
+  .containerImgConcierto{
+    background: url(../imagenes/novedades.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    border-radius: 10px;
+
+  }
+  */
+  
+  $color: hsla(0, 0%, 100%, 0.24);
+  $ancho: 710px;
+  
+  @each $eventos in  conciertos, entrevistas, livestreaming {
+    #{$eventos}{ 
+  
+           background-color: $color ;
+           width: $ancho/2;
+   
+     }
+
+
+@media only screen and (min-width:1201px){
+.contenedorMainNovedades{
+height: 380px;
+background-color: yellow;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.contenedorEventos{
+  height:350px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.conciertos{
+  height:330px;
+}
+
+.entrevistas{
+  height:330px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.livestreaming{
+  height:330px;
+}
+
+
+}
+@media only screen and (min-width:601px) and (max-width:1200px){
+
+
+
+/*------------------Novedades------------*/
+.tituloEventos{
+  color: white;
+}
+.contenedorMainNovedades{
+  display: flex;
+  height:900px;
+  flex-flow: column nowrap;
+
+ 
+ 
+}
+
+.contenedorEventos{
+  display: flex;
+  flex-flow: column nowrap;
+  width:70%;
+  height: 1000px;
+  margin-top: 60px;
+  background-color: plum;
+}
+
+.conciertos{
+  height:330px;
+}
+
+.entrevistas{
+  height:330px;
+  margin-top: 30px;
+}
+.livestreaming{
+  height:330px;
+  margin-top: 30px;
+}
+
+/*-----------------Descarga------------*/
+.descargaAppPagina{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.imgDescarga img{
+width: 350px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+} /*-------------Descarga ------------ */
+  
+.descargaAppPagina{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 60px;
+}
+.descargaapp{
+ margin-left: 30px;
+ display: flex;
+}
+ .tituloPrincipalDescarga{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+ 
+ }
+.tituloDescarga{
+ color: black;
+ font-family: 'Oswald', sans-serif;
+ font-style: normal;
+ font-size: 80px;
+}
+.parrafoDescarga{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding-bottom: 40px;
+  letter-spacing: 0.5px;
+ 
+}
+
+.imgDescarga img{
+width: 650px;
+padding: 30px;
+}
+
+
+
+
+
+
+/*----------------Registrate ---------------*/
+.mainRegistro{
+height: 550px;
+
+    background-image: url(../imagenes/registro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fondoRegistrate{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+background: hsla(0, 0%, 85%, 0.39);
+border-radius: 30px;
+width: 500px;
+padding: 20px;
+
+}
+.registroTituloPrincipal{
+color: white;
+font-family: 'Oswald', sans-serif;
+font-style: normal;
+font-size: 45px;
+text-align: center;
+}
+.nombresFormulario h2 {
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+font-weight: normal;
+margin: 05px;
+}
+input{
+padding: 05px 10px;
+margin: 05px;
+}
+
+.inputRegistro{
+display: flex;
+flex-flow: column nowrap;
+}
+
+.inputSubmit{
+margin: 20px;
+padding: 10px 20px;
+}

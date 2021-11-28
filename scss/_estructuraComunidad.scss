@@ -1,0 +1,298 @@
+    
+.contenedorPadre__Header--Somos{
+    display: flex;
+    flex-flow: column nowrap;
+    }
+    
+.contenedorTituloComunidad{
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: center;
+}
+.parrafoComunidad{
+color: white;
+text-align: center;
+background-color: powderblue;
+}
+    
+    
+.contenedorMainComunidades{
+display: grid;
+}
+
+.comunidadCulturaRadio{
+background-color: palegreen;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+
+.h2Radio{
+text-align: center;
+}
+.parrafoRadioCultura{
+text-align: center;
+}
+.comunidadCulturaPodcast{
+background-color: paleturquoise;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.comunidadCulturaTelevisión{
+background-color: paleturquoise;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+
+/*---------------comunidades -----------------*/
+.contenedorMainRadio{
+display: grid;
+}
+.latinoAmerica{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.norteAmerica{
+
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+ }
+.europa{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.asia{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+
+
+@media only screen and (min-width:1201px){
+    
+.contenedorPadre__Header--Somos{
+    height: 300px;
+    
+    }
+    
+.contenedorTituloComunidad{
+height: 200px;
+}
+.parrafoComunidad{
+color: white;
+font-size: 16px;
+}
+    
+    
+.contenedorMainComunidades{
+background-color: peachpuff;
+height: 320px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+}
+
+.comunidadCulturaRadio{
+background-color: palegreen;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+
+.culturaRadioTitulo{
+width: 70%;
+}
+
+.comunidadCulturaPodcast{
+background-color: paleturquoise;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.comunidadCulturaTelevisión{
+background-color: paleturquoise;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+
+
+/*-------------------comunidades------------------*/
+.contenedorMainRadio{
+background-color: powderblue;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 1fr;
+height: 700px;
+gap: 10px;
+}
+.latinoAmerica{
+background-color: palegreen;
+
+}
+.norteAmerica{
+background-color: palegreen;
+
+ }
+.europa{
+background-color: palegreen;
+
+}
+.asia{
+background-color: palegreen;
+
+}
+}
+
+
+
+ @media only screen and (min-width:601px) and (max-width:1200px){
+.contenedorPadre__Header--Somos{
+height: 300px;
+ }
+ .tituloComunidadesNews{
+margin-top: 30px;
+ }
+ .parrafoRadioCultura{
+     text-align: center;
+ }
+    .contenedorMainComunidades{
+        background-color: peachpuff;
+        height: 720px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        }
+
+/*-----------------------comunidades----------------*/
+.contenedorMainRadio{
+    background-color: powderblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 1200px;
+    gap: 10px;
+    }
+    .latinoAmerica{
+    background-color: palegreen;
+    height: 300px;
+    
+    }
+    .norteAmerica{
+    background-color: palegreen;
+    height: 300px;
+    
+     }
+    .europa{
+    background-color: palegreen;
+    height: 300px;
+    
+    }
+    .asia{
+    background-color: plum;
+    height: 300px;
+    
+    }
+ }
+
+ @media only screen and (max-width:600px){
+    $titulo:(
+        h1:3em,
+        h2:2em,
+        h3:1.3em,
+        h4:1.1em,
+               
+        );
+              
+        $h1: map-get($titulo, h1);
+        h1{
+        font-size: $h1;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        }
+              
+        $h2: map-get($titulo, h2);
+        h2{
+        font-size: $h2;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+                
+        }
+              
+        $h3: map-get($titulo, h3);
+        h3{
+        font-size: $h3;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+                 
+        }
+              
+        $h4: map-get($titulo, h4);
+        h4{
+        font-size: $h4;
+        color: white;
+                
+        }
+.contenedorPadre__Header--Somos{
+height: 300px;
+}
+.tituloComunidadesNews{
+margin-top: 30px;
+
+}
+.parrafoRadioCultura{
+    text-align: center;
+    background-color: papayawhip;
+}
+.contenedorMainComunidades{
+background-color: peachpuff;
+height: 720px;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 10px;
+    }    
+
+/*------------comunidades--------------------*/
+.contenedorMainRadio{
+    background-color: powderblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 1200px;
+    gap: 10px;
+    }
+    .latinoAmerica{
+    background-color: palegreen;
+    height: 300px;
+    
+    }
+    .norteAmerica{
+    background-color: palegreen;
+    height: 300px;
+    
+     }
+    .europa{
+    background-color: palegreen;
+    height: 300px;
+    
+    }
+    .asia{
+    background-color: plum;
+    height: 300px;
+    
+    }
+ }
