@@ -6,7 +6,7 @@
 
 body {
   max-width: 1100%;
-  background: #848b92;
+  background: #393b3d;
   background: -webkit-linear-gradient(to right, #414345, #232526);
   background: linear-gradient(to right, #414345, #232526); }
 
@@ -15,6 +15,7 @@ body {
   height: 100px;
   width: 100%; }
 
+/*--------------animaciones--------------------*/
 .contenedorSomos {
   animation: movimiento 2.5s linear infinite; }
 
@@ -132,29 +133,99 @@ body {
   background: url(../imagenes/equipo03.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%; }
+  background-size: 200%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover; }
+
+.imgComunidadRadio .hover {
+  width: 0%;
+  height: 80vh;
+  background-color: rgba(57, 59, 61, 0.383);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.imgComunidadRadio:hover .hover {
+  width: 100%; }
 
 .imgComunidadPodcast {
   background: url(../imagenes/equipo02.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%; }
+  background-size: 200%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover; }
+
+.imgComunidadPodcast .hover {
+  width: 0%;
+  height: 80vh;
+  background-color: rgba(255, 17, 156, 0.301);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.imgComunidadPodcast:hover .hover {
+  width: 100%; }
 
 .imgComunidadTelevision {
   background: url(../imagenes/equipo04.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%; }
+  background-size: 200%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover; }
 
+.imgComunidadTelevision .hover {
+  width: 0%;
+  height: 80vh;
+  background-color: rgba(255, 251, 17, 0.301);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.hover h3 {
+  text-shadow: 1px 1px 1px black;
+  text-transform: uppercase; }
+
+.imgComunidadTelevision:hover .hover {
+  width: 100%; }
+
+/*-----------------------index------------------*/
 .contenedorMain_comunidad__tituloComunidad--secundario {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../imagenes/comunidad.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 50%;
+  background-color: yellow;
   height: 500px; }
+
+.contenedorTitulosComunidad {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.tituloChico {
+  margin-right: 450px;
+  background-color: purple; }
+
+span {
+  color: yellow;
+  text-transform: uppercase; }
 
 /*---------------------------------------------------NovedadesComunidad----------------------------*/
 .contenedorMain__novedades--centrado {
@@ -165,7 +236,6 @@ body {
   align-items: center;
   justify-content: center; }
   .contenedorMain__novedades--centrado .contenedorMain__novedades__TituloNovedades {
-    width: 50%;
     margin: 20px;
     margin-left: 30px;
     height: 200px; }
@@ -261,7 +331,7 @@ body {
 footer {
   display: flex;
   align-items: center;
-  margin-top: 60px; }
+  margin-top: 30px; }
   footer .logFooter {
     height: 170px;
     flex: 2 1 auto;
@@ -373,6 +443,8 @@ footer {
       margin-left: 12px; }
     .contenedorTituloStacion .favRadio .favRadioTitulo {
       margin-left: 15px; }
+  .contenedorMain__novedades__TituloNovedades {
+    width: 50%; }
   /*---------------------NOVEDADES------------------*/
   .contenedorCard {
     width: 50%;
@@ -413,15 +485,15 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    background: #8E2DE2;
+    height: 500px;
+    background: #232526;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: -webkit-linear-gradient(to right, #414345, #232526);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(75, 0, 224, 0.603), rgba(141, 44, 226, 0.603)), url(../imagenes/fondoHeaderTitulo.png);
+    background: linear-gradient(to right, rgba(64, 66, 68, 0.555), rgba(34, 36, 37, 0.555)), url(../imagenes/fondoHeaderTitulo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200%;
-    height: 500px; }
+    background-size: 100%; }
   h1 {
     font-size: 3em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -494,6 +566,8 @@ footer {
     height: 400px; }
   .contenedorMain__novedades--centrado {
     margin-top: 100px; }
+  .contenedorMain__novedades__TituloNovedades {
+    width: 75%; }
   .contenedorCard {
     margin: 20px;
     display: flex;
@@ -559,16 +633,19 @@ footer {
   .contenedorTituloStacion {
     margin-left: 15px; }
   .contenedorMain {
-    margin-bottom: 100px; }
+    margin-top: 40px; }
   .contenedorMain__comunidad--blanco {
     display: flex;
     flex-flow: column nowrap; }
     .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario {
       height: 300px; }
       .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario .contenedorTitulosComunidad {
-        height: 300px; }
+        height: 300px;
+        width: 75%; }
   .contenedorMain__novedades--centrado {
     margin-top: 50px; }
+  .contenedorMain__novedades__TituloNovedades {
+    width: 75%; }
   .contenedorCard {
     margin: 20px;
     display: flex;
@@ -602,14 +679,20 @@ footer {
     flex-flow: column nowrap;
     height: 450px;
     align-items: center;
-    margin-top: 60px; } }
+    margin-top: 60px; }
+  .contenedorInput {
+    text-align: center; }
+    .contenedorInput .inpuyEmail {
+      border-radius: 20px; }
+    .contenedorInput .buttonNews {
+      background-color: pink;
+      padding: 10px 30px; } }
 
-/*padre*/
 /*-------------------------ENLACES A-------------------------------*/
 /*-----------------------BtnPrincipal tablet y escritorio----------------------------*/
 a {
   font-size: 16px;
-  font-weight: bold; }
+  font-family: 'Lato', sans-serif; }
 
 .contenedorTituloPrincipal__btnPrincipal--azul {
   margin-top: 20px; }
@@ -662,8 +745,7 @@ a {
   text-decoration: none;
   color: #393b3d;
   font-size: 16px;
-  background-color: #e9e8e8;
-  padding: 10px 70px; }
+  background-color: #e9e8e8; }
 
 .btnNovedades:hover {
   background-color: yellow;
@@ -691,17 +773,15 @@ a {
 
 .btnDescarga {
   text-decoration: none;
-  color: blue;
+  color: white;
   font-size: 14px;
-  border: blue 1.5;
-  border-style: solid;
-  padding: 10px 50px;
-  border-radius: 20px; }
+  border: white 1.5;
+  border-style: solid; }
 
 .btnDescarga:hover {
-  background-color: blue;
-  border: blue;
-  color: white; }
+  background-color: yellow;
+  border: yellow;
+  color: #393b3d; }
 
 .btnEventos {
   text-decoration: none;
@@ -723,9 +803,6 @@ a {
   margin-right: 170px; }
 
 /*------navAfter-----*/
-.navbar-nav {
-  margin-left: 140px; }
-
 .nav-item {
   position: relative;
   margin-right: 25px; }
@@ -749,17 +826,6 @@ a {
 .ParrafoSomos {
   color: white;
   font-family: 'Lato', sans-serif; }
-
-@media only screen and (max-width: 600px) {
-  .contenedorMain_comunidad__tituloComunidad--secundario {
-    background-color: palegreen;
-    height: 600px; }
-  .btnSecundario .btnComunidad {
-    border: solid white 1.2px;
-    padding: 10px 30px;
-    color: white; }
-  .btnSecundario .btnComunidad:hover {
-    color: white; } }
 
 /*----------------------------------Imput Newsletter---------------------------------------*/
 .formInput {
@@ -791,44 +857,66 @@ ul {
   margin-right: 10px;
   color: white; }
 
-/*
-.navbar{
-  
+@media only screen and (max-width: 600px) {
+  .collapse {
+    background-color: #393b3d; }
+  .contenedorMain_comunidad__tituloComunidad--secundario {
+    background-color: palegreen;
+    height: 600px; }
+  .btnNovedades {
+    font-size: 16px;
+    padding: 16px 90px; }
+  .btnComunidad {
+    padding: 6px 20px;
+    border-radius: 20px; }
+  .btnDescarga {
+    padding: 6px 20px;
+    border-radius: 20px; }
+  .btnEventos {
+    padding: 6px 20px;
+    border-radius: 20px; } }
 
-    .nav-item {
-        color: brown;
-    
-        .nav-link {
-           
-            font-size:16px;
-          
-        }
-    }
-}
-*/
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .collapse {
+    background-color: #393b3d; }
+  .btnNovedades {
+    font-size: 16px;
+    padding: 16px 30px; }
+  .btnComunidad {
+    padding: 6px 30px;
+    border-radius: 20px; }
+  .btnDescarga {
+    padding: 6px 30px;
+    border-radius: 20px; }
+  .btnEventos {
+    padding: 6px 30px;
+    border-radius: 20px; } }
+
+@media only screen and (min-width: 1201px) {
+  .btnNovedades {
+    font-size: 16px;
+    padding: 10px 60px; }
+  .btnComunidad {
+    padding: 10px 60px;
+    border-radius: 20px; }
+  .btnDescarga {
+    padding: 10px 60px;
+    border-radius: 20px; }
+  .btnEventos {
+    padding: 10px 60px;
+    border-radius: 20px; } }
+
 /*-----------------------------QUIENES SOMOS-----------------------------*/
 .contenedorPadre__Header--Somos {
-  height: 100px; }
+  height: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .contenedorPadre__Header--principal {
   height: 200px; }
 
-/*
-.contenedorMain_somos--centro{
-    display: flex;
-    flex-flow: row wrap;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedorMainSomosCarrousel{
-  display: flex;
-  flex-flow: row wrap;
-  height: 420px;
-  align-items: center;
-  justify-content: center;
-}*/
 .casitodos {
   width: 450px;
   height: 250px;
@@ -866,7 +954,26 @@ ul {
 .ParrafoNovedades {
   color: black; }
 
-/*------------------NOVEDADES----------------------------------------*/
+/*---------------------------Descarga-------------------------------*/
+.contenedorMainDescarga {
+  background: url(../imagenes/NuestraApp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 40px; }
+  .contenedorMainDescarga .contenedorFormularioDescaga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(57, 59, 61, 0.575); }
+    .contenedorMainDescarga .contenedorFormularioDescaga .tituloPrincipalDescarga {
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center; }
+    .contenedorMainDescarga .contenedorFormularioDescaga .parrafoDescarga {
+      color: white; }
+
+/*---------------------------NOVEDADES----------------------------------------*/
 .contenedorMainNovedades {
   display: flex;
   flex-flow: column nowrap;
@@ -904,264 +1011,595 @@ ul {
   align-items: center;
   justify-content: center; }
 
-/*
-  .containerImgConcierto{
-    background: url(../imagenes/novedades.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 200px;
-    border-radius: 10px;
-
-  }
-  */
 conciertos {
   background-color: rgba(255, 255, 255, 0.24);
   width: 355px; }
 
-@media only screen and (min-width: 1201px) {
-  .contenedorMainNovedades {
-    height: 380px;
-    background-color: yellow;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .contenedorEventos {
-    height: 350px;
-    display: flex;
-    flex-flow: row nowrap; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .livestreaming {
-    height: 330px; } }
-
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  /*------------------Novedades------------*/
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 900px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1000px;
-    margin-top: 60px;
-    background-color: plum; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-----------------Descarga------------*/
-  .descargaAppPagina {
-    display: flex;
-    flex-flow: column nowrap; }
-  .imgDescarga img {
-    width: 350px; } }
-
-entrevistas {
-  background-color: rgba(255, 255, 255, 0.24);
-  width: 355px; }
-
-@media only screen and (min-width: 1201px) {
-  .contenedorMainNovedades {
-    height: 380px;
-    background-color: yellow;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .contenedorEventos {
-    height: 350px;
-    display: flex;
-    flex-flow: row nowrap; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .livestreaming {
-    height: 330px; } }
-
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  /*------------------Novedades------------*/
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 900px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1000px;
-    margin-top: 60px;
-    background-color: plum; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-----------------Descarga------------*/
-  .descargaAppPagina {
-    display: flex;
-    flex-flow: column nowrap; }
-  .imgDescarga img {
-    width: 350px; } }
-
-livestreaming {
-  background-color: rgba(255, 255, 255, 0.24);
-  width: 355px; }
-
-@media only screen and (min-width: 1201px) {
-  .contenedorMainNovedades {
-    height: 380px;
-    background-color: yellow;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .contenedorEventos {
-    height: 350px;
-    display: flex;
-    flex-flow: row nowrap; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .livestreaming {
-    height: 330px; } }
-
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  /*------------------Novedades------------*/
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 900px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1000px;
-    margin-top: 60px;
-    background-color: plum; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-----------------Descarga------------*/
-  .descargaAppPagina {
-    display: flex;
-    flex-flow: column nowrap; }
-  .imgDescarga img {
-    width: 350px; } }
-
-/*-------------Descarga ------------ */
-.descargaAppPagina {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 60px; }
-
-.descargaapp {
-  margin-left: 30px;
-  display: flex; }
-
-.tituloPrincipalDescarga {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center; }
-
-.tituloDescarga {
-  color: black;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-size: 80px; }
-
-.parrafoDescarga {
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  padding-bottom: 40px;
-  letter-spacing: 0.5px; }
-
-.imgDescarga img {
-  width: 650px;
-  padding: 30px; }
-
-/*----------------Registrate ---------------*/
 .mainRegistro {
-  height: 550px;
-  background-image: url(../imagenes/registro.png);
+  background: url(../imagenes/fondoRegistrate.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .fondoRegistrate {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background: rgba(217, 217, 217, 0.39);
-  border-radius: 30px;
-  width: 500px;
-  padding: 20px; }
+  background-color: rgba(75, 70, 70, 0.726); }
 
-.registroTituloPrincipal {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-size: 45px;
+.NewsTituloRegistro {
   text-align: center; }
 
-.nombresFormulario h2 {
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  margin: 05px; }
-
-input {
-  padding: 05px 10px;
-  margin: 05px; }
+.contenedorRegistro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .inputRegistro {
   display: flex;
   flex-flow: column nowrap; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
 
-.inputSubmit {
-  margin: 20px;
-  padding: 10px 20px; }
+.contenedorRegistroUsuario {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
+.cuenta {
+  color: white;
+  text-decoration: none; }
+
+.cuenta:hover {
+  color: yellow; }
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .contenedorEventos {
+    height: 350px;
+    display: flex;
+    flex-flow: row nowrap; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .livestreaming {
+    height: 330px; }
+  /*----------------------descargaApp----------------------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 400px; }
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 40px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 450px;
+    width: 45%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 40px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 900px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-----------------DescargaAPP------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 250px;
+    border-radius: 250px; }
+  /*--------------------------Registro-----------------------*/
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 400px;
+    width: 55%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 35px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  /*------------------Novedades------------*/
+  .contenedorTituloComunidad {
+    width: 70%;
+    text-align: center; }
+  .tituloChicoNovedad {
+    margin-left: 105px; }
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 1100px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1100px;
+    margin-top: 40px;
+    background-color: palegreen; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-------------------descargaAPP-----------------*/
+  .contenedorMainDescarga {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 65%;
+    border-radius: 250px;
+    height: 200px;
+    border-radius: 250px; } }
+
+entrevistas {
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 355px; }
+
+.mainRegistro {
+  background: url(../imagenes/fondoRegistrate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fondoRegistrate {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(75, 70, 70, 0.726); }
+
+.NewsTituloRegistro {
+  text-align: center; }
+
+.contenedorRegistro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.inputRegistro {
+  display: flex;
+  flex-flow: column nowrap; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+
+.contenedorRegistroUsuario {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.cuenta {
+  color: white;
+  text-decoration: none; }
+
+.cuenta:hover {
+  color: yellow; }
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .contenedorEventos {
+    height: 350px;
+    display: flex;
+    flex-flow: row nowrap; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .livestreaming {
+    height: 330px; }
+  /*----------------------descargaApp----------------------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 400px; }
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 40px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 450px;
+    width: 45%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 40px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 900px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-----------------DescargaAPP------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 250px;
+    border-radius: 250px; }
+  /*--------------------------Registro-----------------------*/
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 400px;
+    width: 55%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 35px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  /*------------------Novedades------------*/
+  .contenedorTituloComunidad {
+    width: 70%;
+    text-align: center; }
+  .tituloChicoNovedad {
+    margin-left: 105px; }
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 1100px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1100px;
+    margin-top: 40px;
+    background-color: palegreen; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-------------------descargaAPP-----------------*/
+  .contenedorMainDescarga {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 65%;
+    border-radius: 250px;
+    height: 200px;
+    border-radius: 250px; } }
+
+livestreaming {
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 355px; }
+
+.mainRegistro {
+  background: url(../imagenes/fondoRegistrate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fondoRegistrate {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(75, 70, 70, 0.726); }
+
+.NewsTituloRegistro {
+  text-align: center; }
+
+.contenedorRegistro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.inputRegistro {
+  display: flex;
+  flex-flow: column nowrap; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+
+.contenedorRegistroUsuario {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.cuenta {
+  color: white;
+  text-decoration: none; }
+
+.cuenta:hover {
+  color: yellow; }
+
+@media only screen and (min-width: 1201px) {
+  .contenedorMainNovedades {
+    height: 380px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .contenedorEventos {
+    height: 350px;
+    display: flex;
+    flex-flow: row nowrap; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .livestreaming {
+    height: 330px; }
+  /*----------------------descargaApp----------------------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 400px; }
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 40px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 450px;
+    width: 45%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 40px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*------------------Novedades------------*/
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 900px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1000px;
+    margin-top: 60px; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-----------------DescargaAPP------------*/
+  .contenedorMainDescarga {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 45%;
+    border-radius: 250px;
+    height: 250px;
+    border-radius: 250px; }
+  /*--------------------------Registro-----------------------*/
+  .mainRegistro {
+    height: 450px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 400px;
+    width: 55%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 35px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 250px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  /*------------------Novedades------------*/
+  .contenedorTituloComunidad {
+    width: 70%;
+    text-align: center; }
+  .tituloChicoNovedad {
+    margin-left: 105px; }
+  .tituloEventos {
+    color: white; }
+  .contenedorMainNovedades {
+    display: flex;
+    height: 1100px;
+    flex-flow: column nowrap; }
+  .contenedorEventos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    height: 1100px;
+    margin-top: 40px;
+    background-color: palegreen; }
+  .conciertos {
+    height: 330px; }
+  .entrevistas {
+    height: 330px;
+    margin-top: 30px; }
+  .livestreaming {
+    height: 330px;
+    margin-top: 30px; }
+  /*-------------------descargaAPP-----------------*/
+  .contenedorMainDescarga {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .contenedorFormularioDescaga {
+    width: 65%;
+    border-radius: 250px;
+    height: 200px;
+    border-radius: 250px; } }
+
+/*----------------Registrate ---------------*/
 .contenedorPadre__Header--Somos {
   display: flex;
   flex-flow: column nowrap; }

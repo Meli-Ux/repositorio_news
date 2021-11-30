@@ -4,6 +4,10 @@
 
   .contenedorPadre__Header--Somos{ 
     height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -11,22 +15,7 @@
  height: 200px;
 }
 
-/*
-.contenedorMain_somos--centro{
-    display: flex;
-    flex-flow: row wrap;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-}
 
-.contenedorMainSomosCarrousel{
-  display: flex;
-  flex-flow: row wrap;
-  height: 420px;
-  align-items: center;
-  justify-content: center;
-}*/
 
 $ancho: 720px;
 
@@ -76,8 +65,33 @@ $parrafo:red;
 }
 }
 
+/*---------------------------Descarga-------------------------------*/
+.contenedorMainDescarga{
+background: url(../imagenes/NuestraApp.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+ margin-top: 40px;
 
-/*------------------NOVEDADES----------------------------------------*/
+.contenedorFormularioDescaga{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(57, 59, 61, 0.575);
+
+
+  .tituloPrincipalDescarga{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+   
+  }
+  .parrafoDescarga{
+    color: white;
+  }
+}
+}
+/*---------------------------NOVEDADES----------------------------------------*/
 .contenedorMainNovedades{
     display: flex;
     flex-flow: column nowrap;
@@ -122,17 +136,7 @@ $parrafo:red;
     align-items: center;
     justify-content: center;
   }
-  /*
-  .containerImgConcierto{
-    background: url(../imagenes/novedades.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 200px;
-    border-radius: 10px;
-
-  }
-  */
+ 
   
   $color: hsla(0, 0%, 100%, 0.24);
   $ancho: 710px;
@@ -140,16 +144,74 @@ $parrafo:red;
   @each $eventos in  conciertos, entrevistas, livestreaming {
     #{$eventos}{ 
   
-           background-color: $color ;
-           width: $ancho/2;
+      background-color: $color ;
+      width: $ancho/2;
    
-     }
+  }
+
+  .mainRegistro{
+  
+    background: url(../imagenes/fondoRegistrate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .fondoRegistrate{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(75, 70, 70, 0.726);
+  
+    }
+    
+    .NewsTituloRegistro{
+      text-align: center;
+     
+    }
+    
+    .contenedorRegistro{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .inputRegistro{
+    display: flex;
+    flex-flow: column nowrap;
+    .inputSubmit{
+    margin-top: 20px;
+      }
+    }
+    .contenedorRegistroUsuario{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cuenta {
+      color: white;
+      text-decoration: none;
+    }
+    .cuenta:hover{
+      color: yellow;
+    }
+
+
+
+
+
 
 
 @media only screen and (min-width:1201px){
 .contenedorMainNovedades{
 height: 380px;
-background-color: yellow;
+
 display: flex;
 flex-flow: row nowrap;
 justify-content: center;
@@ -172,11 +234,58 @@ width: 100%;
   margin-right: 20px;
 }
 .livestreaming{
-  height:330px;
+height:330px;
 }
+
+/*----------------------descargaApp----------------------------*/
+.contenedorMainDescarga{
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.contenedorFormularioDescaga{
+width:45%;
+border-radius: 250px;
+height: 400px;
+}
+.mainRegistro{
+height: 450px;
+width: 100%;
+margin-top: 40px;
+}
+  
+.fondoRegistrate{
+border-radius: 250px;
+height: 450px;
+width: 45%;
+padding: 20px;
+}
+  
+.NewsTituloRegistro{
+font-size: 40px;
+margin-top: 40px;
+}
+  
+  .contenedorRegistro{
+    height: 250px;
+    width: 100%;
+  }
+  
+  .inputRegistro{
+  .inputSubmit{
+  margin-top: 20px;
+    }
+  }
+  .contenedorRegistroUsuario{
+    height: 50px;
+    width: 50%;
+  }
 
 
 }
+
 @media only screen and (min-width:601px) and (max-width:1200px){
 
 
@@ -200,7 +309,7 @@ width: 100%;
   width:70%;
   height: 1000px;
   margin-top: 60px;
-  background-color: plum;
+ 
 }
 
 .conciertos{
@@ -216,127 +325,127 @@ width: 100%;
   margin-top: 30px;
 }
 
-/*-----------------Descarga------------*/
-.descargaAppPagina{
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-
-.imgDescarga img{
-width: 350px;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-} /*-------------Descarga ------------ */
-  
-.descargaAppPagina{
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 60px;
-}
-.descargaapp{
- margin-left: 30px;
- display: flex;
-}
- .tituloPrincipalDescarga{
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: center;
- 
- }
-.tituloDescarga{
- color: black;
- font-family: 'Oswald', sans-serif;
- font-style: normal;
- font-size: 80px;
-}
-.parrafoDescarga{
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  padding-bottom: 40px;
-  letter-spacing: 0.5px;
- 
-}
-
-.imgDescarga img{
-width: 650px;
-padding: 30px;
-}
-
-
-
-
-
-
-/*----------------Registrate ---------------*/
-.mainRegistro{
-height: 550px;
-
-    background-image: url(../imagenes/registro.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.fondoRegistrate{
+/*-----------------DescargaAPP------------*/
+.contenedorMainDescarga{
+height: 400px;
 display: flex;
-flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
-background: hsla(0, 0%, 85%, 0.39);
-border-radius: 30px;
-width: 500px;
+gap: 10px;
+}
+
+
+.contenedorFormularioDescaga{
+width:45%;
+border-radius: 250px;
+height:250px;
+border-radius: 250px;
+}
+
+/*--------------------------Registro-----------------------*/
+.mainRegistro{
+height: 450px;
+width: 100%;
+margin-top: 70px;
+}
+  
+.fondoRegistrate{
+border-radius: 250px;
+height: 400px;
+width: 55%;
 padding: 20px;
+}
+  
+.NewsTituloRegistro{
+font-size: 35px;
+margin-top: 40px;
+}
+  
+  .contenedorRegistro{
+    height: 250px;
+    width: 100%;
+  }
+  
+  .inputRegistro{
+  .inputSubmit{
+  margin-top: 20px;
+    }
+  }
+  .contenedorRegistroUsuario{
+    height: 50px;
+    width: 50%;
+  }
 
 }
-.registroTituloPrincipal{
-color: white;
-font-family: 'Oswald', sans-serif;
-font-style: normal;
-font-size: 45px;
-text-align: center;
-}
-.nombresFormulario h2 {
-color: white;
-font-family: 'Lato', sans-serif;
-font-size: 16px;
-font-weight: normal;
-margin: 05px;
-}
-input{
-padding: 05px 10px;
-margin: 05px;
+
+
+
+@media only screen and (max-width:600px){
+
+/*------------------Novedades------------*/
+.contenedorTituloComunidad{
+
+  width: 70%;
+  text-align: center;
 }
 
-.inputRegistro{
-display: flex;
-flex-flow: column nowrap;
+.tituloChicoNovedad{
+
+  margin-left: 105px;
+}
+.tituloEventos{
+  color: white;
 }
 
-.inputSubmit{
-margin: 20px;
-padding: 10px 20px;
+.contenedorMainNovedades{
+  display: flex;
+  height:1100px;
+  flex-flow: column nowrap;
+ 
 }
+
+.contenedorEventos{
+  display: flex;
+  flex-flow: column nowrap;
+  width:70%;
+  height: 1100px;
+  margin-top: 40px;
+  background-color: palegreen;
+}
+
+.conciertos{
+  height:330px;
+}
+
+.entrevistas{
+  height:330px;
+  margin-top: 30px;
+}
+.livestreaming{
+  height:330px;
+  margin-top: 30px;
+}
+
+/*-------------------descargaAPP-----------------*/
+
+.contenedorMainDescarga{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+  
+  
+  .contenedorFormularioDescaga{
+  width:65%;
+  border-radius: 250px;
+  height:200px;
+  border-radius: 250px;
+  }
+
+
+}
+}
+
+/*----------------Registrate ---------------*/

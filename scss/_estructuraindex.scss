@@ -16,6 +16,12 @@ body{
    width: 100%;
 }
 
+/*--------------animaciones--------------------*/
+
+
+
+
+
 .contenedorSomos{
     animation: movimiento 2.5s linear infinite;
 }
@@ -179,41 +185,116 @@ background: url(../imagenes/equipo03.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: 200%;
-    }
+text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
+}
+.imgComunidadRadio .hover{
+width: 0%;
+height: 80vh;
+background-color: rgba(57, 59, 61, 0.383);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.imgComunidadRadio:hover .hover{
+width: 100%;
+}
+    
+
+
+
+
 .imgComunidadPodcast{
 background: url(../imagenes/equipo02.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: 200%;
+text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
+}
+.imgComunidadPodcast .hover{
+width: 0%;
+height: 80vh;
+background-color: rgba(255, 17, 156, 0.301);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.imgComunidadPodcast:hover .hover{
+width: 100%;
+}
 
 
-    }
+
+
 .imgComunidadTelevision{
 background: url(../imagenes/equipo04.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: 200%;
+text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
  }
 
+ 
+.imgComunidadTelevision .hover{
+width: 0%;
+height: 80vh;
+background-color: rgba(255, 251, 17, 0.301);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.hover h3{
+ text-shadow: 1px 1px 1px black;
+ text-transform: uppercase;
+}
 
+.imgComunidadTelevision:hover .hover{
+    width: 100%;
+}
   
    
- 
+ /*-----------------------index------------------*/
 .contenedorMain_comunidad__tituloComunidad--secundario{
 display: flex;
 align-items: center;
 justify-content: center;  
-background: url(../imagenes/comunidad.png); 
-background-position: right;
-background-repeat: no-repeat;
-background-size: 50%;
+background-color: yellow;
 height: 500px;
 
 }    
+.contenedorTitulosComunidad{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+.tituloChico{
+margin-right: 450px;
+background-color: purple;
+}
 
 
-
-
+span{
+color: yellow;
+text-transform: uppercase;
+}
 
 
 
@@ -235,7 +316,7 @@ height: 500px;
    
   
 .contenedorMain__novedades__TituloNovedades{
-width: 50%;
+
 margin: 20px;
 margin-left:30px;
 height: 200px;
@@ -368,7 +449,7 @@ footer{
            
     display: flex;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 30px;
                   
     .logFooter{
                     
@@ -497,6 +578,7 @@ width: 60%;
 .contenedorSomosComunidad{
 height: 1100px;
 
+
 }
 
 .contenedorGrillaFav{
@@ -570,7 +652,9 @@ margin-left: 15px; }
 }
     
 
-
+.contenedorMain__novedades__TituloNovedades{
+    width:50%;
+}
          
 /*---------------------NOVEDADES------------------*/
 
@@ -645,13 +729,14 @@ flex-flow: column nowrap;
 display: flex;
 flex-flow: column nowrap;
 width: 100%;
-background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, hsla(260, 100%, 44%, 0.603), hsla(272, 76%, 53%, 0.603)), url(../imagenes/fondoHeaderTitulo.png); 
+height: 500px;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(210, 3%, 26%, 0.555), hsla(200, 4%, 14%, 0.555)), url(../imagenes/fondoHeaderTitulo.png); 
 background-position: center;
 background-repeat: no-repeat;
-background-size: 200%;
-height: 500px;
+background-size: 100%;
+
     
 }
 
@@ -796,7 +881,9 @@ height: 400px;
 .contenedorMain__novedades--centrado{
 margin-top: 100px;
 }
-  
+.contenedorMain__novedades__TituloNovedades{
+ width: 75%;
+ }  
 
 .contenedorCard{
 margin: 20px;    
@@ -915,7 +1002,8 @@ margin-top: 30px;
 
 
 .contenedorMain{
-margin-bottom: 100px;
+margin-top: 40px;
+
 }
 
 .contenedorMain__comunidad--blanco{
@@ -927,6 +1015,7 @@ height: 300px;
 
 .contenedorTitulosComunidad{
 height: 300px;
+width: 75%;
 }
       
 }
@@ -934,6 +1023,9 @@ height: 300px;
 
 .contenedorMain__novedades--centrado{
  margin-top:50px;
+}
+.contenedorMain__novedades__TituloNovedades{
+width: 75%;
 }
 
 .contenedorCard{
@@ -956,31 +1048,44 @@ margin-top: 40px;
 margin-top: 40px; }
 
 .contenedorMain__newsletter{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 600px;
-    gap: 10px;
-    }
+display: grid;
+grid-template-rows: 1fr 1fr;
+height: 600px;
+gap: 10px;}
     
-    .contenedorNew{
-    height: 300px;
-    }
-    .contenedorTituloNewsLetter{
-    width: 80%;
-    }
-    .newsLetterTitulo{
-        text-align: center;
-    }
-    .contenedorNewsContenido{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 300px;
-    }
-    .footer{
-    display: flex;
-    flex-flow:column nowrap;
-    height:450px;
-    align-items: center;
-    margin-top: 60px;
-     }             
-  }/*padre*/
+.contenedorNew{
+height: 300px;
+}
+.contenedorTituloNewsLetter{
+width: 80%;
+}
+.newsLetterTitulo{
+text-align: center;
+}
+.contenedorNewsContenido{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+height: 300px;
+}
+.footer{
+display: flex;
+flex-flow:column nowrap;
+height:450px;
+align-items: center;
+margin-top: 60px;
+}      
+
+.contenedorInput{
+text-align: center;
+.inpuyEmail{
+border-radius: 20px;
+}
+.buttonNews{
+background-color: pink;
+padding: 10px 30px;
+}
+}
+
+
+}
+

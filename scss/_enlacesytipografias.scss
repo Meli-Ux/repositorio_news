@@ -5,8 +5,11 @@ $color:red;
 
 a{
     font-size: 16px;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
+
+
+
 .contenedorTituloPrincipal__btnPrincipal--azul{ 
 margin-top: 20px;
 .btnPrincipal {
@@ -71,7 +74,7 @@ text-decoration: none;
 color: #393b3d;
 font-size: 16px;
 background-color: #e9e8e8;
-padding: 10px 70px;  }
+ }
 
 .btnNovedades:hover{
    background-color: yellow; 
@@ -95,26 +98,24 @@ padding: 10px 60px;
 border-radius: 20px;
 }
 .btnComunidad:hover{
-    background-color: yellow;
-    color: #393b3d;
-    border: none;
+background-color: yellow;
+color: #393b3d;
+border: none;
 }
 
 
 .btnDescarga{
 text-decoration: none;
-color: blue;
+color: white;
 font-size: 14px;
-border:blue 1.5;
+border:white 1.5;
 border-style: solid;
-padding: 10px 50px;  
-border-radius: 20px;
 }
 
 .btnDescarga:hover{
-    background-color: blue;
-    border: blue;
-    color: white;
+    background-color: yellow;
+    border: yellow;
+    color: #393b3d;
 }
 
 
@@ -142,10 +143,7 @@ color: #393b3d;
 
 
 /*------navAfter-----*/
-.navbar-nav{
-  
-    margin-left:140px;
-}
+
 .nav-item{
     position: relative;
     margin-right: 25px;
@@ -190,29 +188,6 @@ font-family: 'Lato', sans-serif;
 }
 
   
-
-
-
-
-@media only screen and (max-width:600px){
-
-.contenedorMain_comunidad__tituloComunidad--secundario{
-    background-color: palegreen;
-    height: 600px;
-}
-
-.btnSecundario{
-.btnComunidad{
-border: solid white 1.2px;
-padding: 10px 30px;
-color: white;
-}
-   
-.btnComunidad:hover{
-       color: white;}
-
-}
-}
 
 
 
@@ -262,18 +237,68 @@ $color:red;
     margin-right: 10px;
     color: white;
 }
-/*
-.navbar{
-  
 
-    .nav-item {
-        color: brown;
-    
-        .nav-link {
-           
-            font-size:16px;
-          
-        }
+
+@media only screen and (max-width:600px){
+    .collapse{
+        background-color: #393b3d;
     }
+.contenedorMain_comunidad__tituloComunidad--secundario{ 
+background-color: palegreen;
+height: 600px;}
+.btnNovedades{
+    font-size: 16px;
+    padding: 16px 90px;  }
+                
+    .btnComunidad{
+    padding: 6px 20px;  
+    border-radius: 20px;}
+    .btnDescarga{
+    padding: 6px 20px;  
+    border-radius: 20px;}
+    .btnEventos{
+    padding: 6px 20px;  
+    border-radius: 20px;
+    }   
+
+
 }
-*/
+
+@media only screen and (min-width:601px) and (max-width:1200px){
+    .collapse{
+        background-color: #393b3d;
+    }
+.btnNovedades{
+font-size: 16px;
+padding: 16px 30px;  }
+            
+.btnComunidad{
+padding: 6px 30px;  
+border-radius: 20px;}
+.btnDescarga{
+padding: 6px 30px;  
+border-radius: 20px;}
+.btnEventos{
+padding: 6px 30px;  
+border-radius: 20px;
+}
+}
+
+@media only screen and (min-width:1201px){
+
+.btnNovedades{
+font-size: 16px;
+padding: 10px 60px;  }
+    
+.btnComunidad{
+padding: 10px 60px;  
+border-radius: 20px;}
+.btnDescarga{
+padding: 10px 60px;  
+border-radius: 20px;}
+.btnEventos{
+padding: 10px 60px;  
+border-radius: 20px;
+}
+       
+}
