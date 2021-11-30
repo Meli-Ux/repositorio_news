@@ -13,7 +13,6 @@ justify-content: center;
 .parrafoComunidad{
 color: white;
 text-align: center;
-background-color: powderblue;
 }
     
     
@@ -32,9 +31,7 @@ align-items: center;
 .h2Radio{
 text-align: center;
 }
-.parrafoRadioCultura{
-text-align: center;
-}
+
 .comunidadCulturaPodcast{
 background-color: paleturquoise;
 display: flex;
@@ -51,6 +48,32 @@ align-items: center;
 }
 
 /*---------------comunidades -----------------*/
+
+.parrafoRadioCultura{
+ background: url(../imagenes/trazo.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+.comunidadCulturaRadio{
+background: url(../imagenes/radioComunidad.png);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.comunidadCulturaPodcast{
+background: url(../imagenes/Podcast_Cover_Artwork.png);
+background-position: center;
+background-repeat: no-repeat;
+}
+.comunidadCulturaTelevisión{
+background: url(../imagenes/comunidadTv.png);
+background-position: center;
+background-repeat: no-repeat;}
+
 .contenedorMainRadio{
 display: grid;
 }
@@ -92,13 +115,15 @@ align-items: center;
 height: 200px;
 }
 .parrafoComunidad{
-color: white;
 font-size: 16px;
 }
+.parrafoRadioCultura{
+background-size: 100%;
+height: 30px;
+ }
     
     
 .contenedorMainComunidades{
-background-color: peachpuff;
 height: 320px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -106,26 +131,26 @@ gap: 10px;
 }
 
 .comunidadCulturaRadio{
-background-color: palegreen;
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+
 }
+
 
 .culturaRadioTitulo{
 width: 70%;
 }
 
 .comunidadCulturaPodcast{
-background-color: paleturquoise;
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
 }
 .comunidadCulturaTelevisión{
-background-color: paleturquoise;
+
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
@@ -169,18 +194,26 @@ height: 300px;
  .tituloComunidadesNews{
 margin-top: 30px;
  }
+ 
  .parrafoRadioCultura{
-     text-align: center;
- }
-    .contenedorMainComunidades{
-        background-color: peachpuff;
-        height: 720px;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 10px;
-        }
+background-size: 120%;
+height: 40px;
+width: 120%;}
+.contenedorMainComunidades{
+height: 720px;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 10px;}
 
+.comunidadCulturaPodcast{
+background-size: 100%;
+}
 /*-----------------------comunidades----------------*/
+
+ 
+    
+   
+
 .contenedorMainRadio{
     background-color: powderblue;
     display: grid;

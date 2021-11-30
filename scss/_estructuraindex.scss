@@ -10,11 +10,7 @@ body{
     background: linear-gradient(to right, #414345, #232526); 
 }
 
-.wave{
-   margin-top: 100px;
-   height: 100px;
-   width: 100%;
-}
+
 
 /*--------------animaciones--------------------*/
 
@@ -22,32 +18,10 @@ body{
 
 
 
-.contenedorSomos{
-    animation: movimiento 2.5s linear infinite;
-}
-@keyframes movimiento {
-0%{
-        transform: translateY(0);
-    }
-50%{
-        transform: translateY(30px);
-    }
-100%{
-        transform: translateY(30px);
-  }
-}
 
-.container-fluid{
- height: 100px;
-    
-}
-.navbar{
-    margin-left: 50px;
-}
 
-.d-flex{
-    margin-right: 50px;
-}
+
+
 /*---------------------------------------------------Header-------------------------------------*/
 .contenedorPadre{
   
@@ -428,19 +402,98 @@ gap: 10px;
 background: url(../imagenes/somosComunidad.jpg);
 background-position: center;
 background-repeat: no-repeat;
-
+text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
 }
+.contenedorCultura .hoverNews{
+width: 0%;
+height: 80vh;
+background: url(../imagenes/comunidadtelevisión.jpg);
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.contenedorCultura:hover .hoverNews{
+width: 100%;
+}
+
+
+
+
+
 .contenedorSocial{
     background: url(../imagenes/articuloestación.png);
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
+}
+.contenedorSocial .hoverNews{
+width: 0%;
+height: 80vh;
+background: url(../imagenes/comunidadSomos.jpg);
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.contenedorSocial:hover .hoverNews{
+width: 100%;
+}
   
-}
+
 .contenedorEquipoSomos{
-    background: url(../imagenes/comunidadSomos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+background: url(../imagenes/comunidadSomos.jpg);
+ background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+overflow: hidden;
+position: relative;
+object-fit: cover;
 }
+.contenedorEquipoSomos .hoverNews{
+width: 0%;
+height: 80vh;
+background: url(../imagenes/Podcast_Cover_Artwork.png);
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;  
+}
+.contenedorEquipoSomos:hover .hoverNews{
+width: 100%;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /*--------------descarga----------------*/
@@ -496,7 +549,19 @@ footer{
 /*-----------------------comunidadMain----------------------------------*/
 
 @media only screen and (min-width:1201px){
+    
 .contenedorPadre{
+    .container-fluid{
+        height: 100px;
+           
+       }
+       .navbar{
+           margin-left: 50px;
+       }
+       
+       .d-flex{
+           margin-right: 50px;
+       }
     .contenedorPadre__Header--principal{
         height: 1600px;
         display: flex;

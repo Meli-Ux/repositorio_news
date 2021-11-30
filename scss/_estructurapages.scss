@@ -20,11 +20,6 @@
 $ancho: 720px;
 
 
-.casitodos{
-    width: 450px;
-    height: 250px;
-    margin-right: 20px;
-}
 
 
 
@@ -41,6 +36,7 @@ $ancho: 720px;
 }
 
 
+
 .ParrafoNovedades{
     width:80%;
     background-color: hsla(0, 0%, 100%, 0.507);
@@ -55,7 +51,7 @@ $ancho: 720px;
 }
 
  
-$parrafo:red;
+/*$parrafo:red;
 
 .ParrafoNovedades{
 @if ($parrafo == azul) {
@@ -64,7 +60,7 @@ $parrafo:red;
     color:  black;
 }
 }
-
+*/
 /*---------------------------Descarga-------------------------------*/
 .contenedorMainDescarga{
 background: url(../imagenes/NuestraApp.png);
@@ -202,13 +198,33 @@ background-size: 100%;
       color: yellow;
     }
 
-
+  
 
 
 
 
 
 @media only screen and (min-width:1201px){
+  
+.contenedorMain_somos--centro{
+
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+  
+.casitodos{
+  width: 450px;
+  height: 250px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+  .ParrafoSomos{
+    margin-top: 20px;
+  }
+
 .contenedorMainNovedades{
 height: 380px;
 
@@ -288,7 +304,21 @@ margin-top: 40px;
 
 @media only screen and (min-width:601px) and (max-width:1200px){
 
+/*-----------------Quienesomos------------*/
 
+.contenedorMain_somos--centro{
+  padding:40px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.casitodos{
+  width: 350px;
+  height: 250px;
+ margin-top:30px;
+ 
+}
 
 /*------------------Novedades------------*/
 .tituloEventos{
@@ -298,8 +328,6 @@ margin-top: 40px;
   display: flex;
   height:900px;
   flex-flow: column nowrap;
-
- 
  
 }
 
@@ -382,6 +410,23 @@ margin-top: 40px;
 
 @media only screen and (max-width:600px){
 
+  .contenedorMain_somos--centro{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1100px;
+    background-color: palegreen;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .casitodos{
+    height: 250px;
+    margin-top:20px;
+  }
+  .ParrafoSomos{
+    margin-top: 30px;
+    
+  }
+
 /*------------------Novedades------------*/
 .contenedorTituloComunidad{
 
@@ -429,11 +474,11 @@ margin-top: 40px;
 /*-------------------descargaAPP-----------------*/
 
 .contenedorMainDescarga{
-  height: 250px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  
   }
   
   
@@ -443,9 +488,48 @@ margin-top: 40px;
   height:200px;
   border-radius: 250px;
   }
-
-
+.mainRegistro{
+height: 350px;
+width: 100%;
+margin-top: 70px;
 }
+  
+.fondoRegistrate{
+border-radius: 250px;
+height:300px;
+width: 75%;
+padding: 20px;
+}
+  
+.NewsTituloRegistro{
+font-size: 20px;
+margin-top: 40px;
+}
+  
+  .contenedorRegistro{
+    height: 150px;
+    width: 100%;
+  }
+  
+  .inputRegistro{
+  .inputSubmit{
+  margin-top: 20px;
+    }
+  }
+  .contenedorRegistroUsuario{
+    height: 50px;
+    width: 70%;
+    margin-top:10px;
+  }
+
+
+  
+}
+
+ 
+
+
+  
 }
 
 /*----------------Registrate ---------------*/

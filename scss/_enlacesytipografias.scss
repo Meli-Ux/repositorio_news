@@ -45,21 +45,14 @@ color: white;
     width: 90px;  
 }
 /*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
-.btnSecundarioComunidad{
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 40px;
 
-}
 
 .btnSecundarioComunidades{
 text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 10px;
+
 }
 
 .btnSecundarioNovedades{
@@ -91,16 +84,29 @@ justify-content: center;}
 .btnComunidad{
 text-decoration: none;
 color: white;
+border: solid white;
 font-size: 16px;
-border:yellow 1.5;
 border-style: solid;
-padding: 10px 60px;  
+}
+.btnComunidades{
+text-decoration: none;
+color:#393b3d ;
+background-color: yellow;
+font-size: 16px;
 border-radius: 20px;
 }
+
+.btnComunidades:hover{
+background-color: white;
+color: #393b3d;
+border: none;
+}
+
 .btnComunidad:hover{
 background-color: yellow;
 color: #393b3d;
 border: none;
+
 }
 
 
@@ -113,9 +119,9 @@ border-style: solid;
 }
 
 .btnDescarga:hover{
-    background-color: yellow;
-    border: yellow;
-    color: #393b3d;
+background-color: yellow;
+border: yellow;
+color: #393b3d;
 }
 
 
@@ -125,7 +131,6 @@ color: #393b3d;
 font-size: 14px;
 background-color: white;
 padding: 10px 60px;  
-border-radius: 20px;
 }
 .btnEventos:hover{
 background-color: yellow;  
@@ -275,6 +280,11 @@ padding: 16px 30px;  }
 .btnComunidad{
 padding: 6px 30px;  
 border-radius: 20px;}
+.btnComunidades{
+
+font-size: 16px;
+padding: 6px 30px;
+    }
 .btnDescarga{
 padding: 6px 30px;  
 border-radius: 20px;}
@@ -291,8 +301,19 @@ font-size: 16px;
 padding: 10px 60px;  }
     
 .btnComunidad{
-padding: 10px 60px;  
-border-radius: 20px;}
+    font-size: 16px;
+    padding: 7px 60px;
+    border-radius: 20px;
+    margin-top: 10px;
+    }
+
+
+.btnComunidades{
+text-decoration: none;
+background-color: yellow;
+font-size: 16px;
+padding: 7px 60px;
+}
 .btnDescarga{
 padding: 10px 60px;  
 border-radius: 20px;}

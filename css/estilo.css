@@ -10,32 +10,7 @@ body {
   background: -webkit-linear-gradient(to right, #414345, #232526);
   background: linear-gradient(to right, #414345, #232526); }
 
-.wave {
-  margin-top: 100px;
-  height: 100px;
-  width: 100%; }
-
 /*--------------animaciones--------------------*/
-.contenedorSomos {
-  animation: movimiento 2.5s linear infinite; }
-
-@keyframes movimiento {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(30px); }
-  100% {
-    transform: translateY(30px); } }
-
-.container-fluid {
-  height: 100px; }
-
-.navbar {
-  margin-left: 50px; }
-
-.d-flex {
-  margin-right: 50px; }
-
 /*---------------------------------------------------Header-------------------------------------*/
 .contenedorPadre {
   /*--------------contenedor header--------------*/
@@ -317,15 +292,69 @@ span {
   .contenedorNewsContenido .contenedorCultura {
     background: url(../imagenes/somosComunidad.jpg);
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; }
+  .contenedorNewsContenido .contenedorCultura .hoverNews {
+    width: 0%;
+    height: 80vh;
+    background: url(../imagenes/comunidadtelevisión.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  .contenedorNewsContenido .contenedorCultura:hover .hoverNews {
+    width: 100%; }
   .contenedorNewsContenido .contenedorSocial {
     background: url(../imagenes/articuloestación.png);
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; }
+  .contenedorNewsContenido .contenedorSocial .hoverNews {
+    width: 0%;
+    height: 80vh;
+    background: url(../imagenes/comunidadSomos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  .contenedorNewsContenido .contenedorSocial:hover .hoverNews {
+    width: 100%; }
   .contenedorNewsContenido .contenedorEquipoSomos {
     background: url(../imagenes/comunidadSomos.jpg);
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; }
+  .contenedorNewsContenido .contenedorEquipoSomos .hoverNews {
+    width: 0%;
+    height: 80vh;
+    background: url(../imagenes/Podcast_Cover_Artwork.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  .contenedorNewsContenido .contenedorEquipoSomos:hover .hoverNews {
+    width: 100%; }
 
 /*--------------descarga----------------*/
 footer {
@@ -354,6 +383,12 @@ footer {
 
 /*-----------------------comunidadMain----------------------------------*/
 @media only screen and (min-width: 1201px) {
+  .contenedorPadre .container-fluid {
+    height: 100px; }
+  .contenedorPadre .navbar {
+    margin-left: 50px; }
+  .contenedorPadre .d-flex {
+    margin-right: 50px; }
   .contenedorPadre .contenedorPadre__Header--principal {
     height: 1600px;
     display: flex;
@@ -721,19 +756,11 @@ a {
   width: 90px; }
 
 /*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
-.btnSecundarioComunidad {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 40px; }
-
 .btnSecundarioComunidades {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 10px; }
+  justify-content: center; }
 
 .btnSecundarioNovedades {
   text-align: center;
@@ -760,11 +787,21 @@ a {
 .btnComunidad {
   text-decoration: none;
   color: white;
+  border: solid white;
   font-size: 16px;
-  border: yellow 1.5;
-  border-style: solid;
-  padding: 10px 60px;
+  border-style: solid; }
+
+.btnComunidades {
+  text-decoration: none;
+  color: #393b3d;
+  background-color: yellow;
+  font-size: 16px;
   border-radius: 20px; }
+
+.btnComunidades:hover {
+  background-color: white;
+  color: #393b3d;
+  border: none; }
 
 .btnComunidad:hover {
   background-color: yellow;
@@ -788,8 +825,7 @@ a {
   color: #393b3d;
   font-size: 14px;
   background-color: white;
-  padding: 10px 60px;
-  border-radius: 20px; }
+  padding: 10px 60px; }
 
 .btnEventos:hover {
   background-color: yellow;
@@ -885,6 +921,9 @@ ul {
   .btnComunidad {
     padding: 6px 30px;
     border-radius: 20px; }
+  .btnComunidades {
+    font-size: 16px;
+    padding: 6px 30px; }
   .btnDescarga {
     padding: 6px 30px;
     border-radius: 20px; }
@@ -897,8 +936,15 @@ ul {
     font-size: 16px;
     padding: 10px 60px; }
   .btnComunidad {
-    padding: 10px 60px;
-    border-radius: 20px; }
+    font-size: 16px;
+    padding: 7px 60px;
+    border-radius: 20px;
+    margin-top: 10px; }
+  .btnComunidades {
+    text-decoration: none;
+    background-color: yellow;
+    font-size: 16px;
+    padding: 7px 60px; }
   .btnDescarga {
     padding: 10px 60px;
     border-radius: 20px; }
@@ -916,11 +962,6 @@ ul {
 
 .contenedorPadre__Header--principal {
   height: 200px; }
-
-.casitodos {
-  width: 450px;
-  height: 250px;
-  margin-right: 20px; }
 
 .casitodos-1 {
   width: 360px; }
@@ -951,9 +992,16 @@ ul {
   color: white;
   width: 60%; }
 
-.ParrafoNovedades {
-  color: black; }
+/*$parrafo:red;
 
+.ParrafoNovedades{
+@if ($parrafo == azul) {
+    color: blue;
+}@else{
+    color:  black;
+}
+}
+*/
 /*---------------------------Descarga-------------------------------*/
 .contenedorMainDescarga {
   background: url(../imagenes/NuestraApp.png);
@@ -1059,6 +1107,18 @@ conciertos {
   color: yellow; }
 
 @media only screen and (min-width: 1201px) {
+  .contenedorMain_somos--centro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 450px;
+    height: 250px;
+    margin-right: 20px;
+    margin-top: 40px; }
+  .ParrafoSomos {
+    margin-top: 20px; }
   .contenedorMainNovedades {
     height: 380px;
     display: flex;
@@ -1111,6 +1171,17 @@ conciertos {
     width: 50%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*-----------------Quienesomos------------*/
+  .contenedorMain_somos--centro {
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 350px;
+    height: 250px;
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .tituloEventos {
     color: white; }
@@ -1167,6 +1238,18 @@ conciertos {
     width: 50%; } }
 
 @media only screen and (max-width: 600px) {
+  .contenedorMain_somos--centro {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1100px;
+    background-color: palegreen;
+    display: flex;
+    flex-flow: column nowrap; }
+  .casitodos {
+    height: 250px;
+    margin-top: 20px; }
+  .ParrafoSomos {
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .contenedorTituloComunidad {
     width: 70%;
@@ -1196,16 +1279,36 @@ conciertos {
     margin-top: 30px; }
   /*-------------------descargaAPP-----------------*/
   .contenedorMainDescarga {
-    height: 250px;
+    height: 220px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    align-items: center; }
   .contenedorFormularioDescaga {
     width: 65%;
     border-radius: 250px;
     height: 200px;
-    border-radius: 250px; } }
+    border-radius: 250px; }
+  .mainRegistro {
+    height: 350px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 300px;
+    width: 75%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 20px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 150px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 70%;
+    margin-top: 10px; } }
 
 entrevistas {
   background-color: rgba(255, 255, 255, 0.24);
@@ -1255,6 +1358,18 @@ entrevistas {
   color: yellow; }
 
 @media only screen and (min-width: 1201px) {
+  .contenedorMain_somos--centro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 450px;
+    height: 250px;
+    margin-right: 20px;
+    margin-top: 40px; }
+  .ParrafoSomos {
+    margin-top: 20px; }
   .contenedorMainNovedades {
     height: 380px;
     display: flex;
@@ -1307,6 +1422,17 @@ entrevistas {
     width: 50%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*-----------------Quienesomos------------*/
+  .contenedorMain_somos--centro {
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 350px;
+    height: 250px;
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .tituloEventos {
     color: white; }
@@ -1363,6 +1489,18 @@ entrevistas {
     width: 50%; } }
 
 @media only screen and (max-width: 600px) {
+  .contenedorMain_somos--centro {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1100px;
+    background-color: palegreen;
+    display: flex;
+    flex-flow: column nowrap; }
+  .casitodos {
+    height: 250px;
+    margin-top: 20px; }
+  .ParrafoSomos {
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .contenedorTituloComunidad {
     width: 70%;
@@ -1392,16 +1530,36 @@ entrevistas {
     margin-top: 30px; }
   /*-------------------descargaAPP-----------------*/
   .contenedorMainDescarga {
-    height: 250px;
+    height: 220px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    align-items: center; }
   .contenedorFormularioDescaga {
     width: 65%;
     border-radius: 250px;
     height: 200px;
-    border-radius: 250px; } }
+    border-radius: 250px; }
+  .mainRegistro {
+    height: 350px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 300px;
+    width: 75%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 20px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 150px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 70%;
+    margin-top: 10px; } }
 
 livestreaming {
   background-color: rgba(255, 255, 255, 0.24);
@@ -1451,6 +1609,18 @@ livestreaming {
   color: yellow; }
 
 @media only screen and (min-width: 1201px) {
+  .contenedorMain_somos--centro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 450px;
+    height: 250px;
+    margin-right: 20px;
+    margin-top: 40px; }
+  .ParrafoSomos {
+    margin-top: 20px; }
   .contenedorMainNovedades {
     height: 380px;
     display: flex;
@@ -1503,6 +1673,17 @@ livestreaming {
     width: 50%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
+  /*-----------------Quienesomos------------*/
+  .contenedorMain_somos--centro {
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center; }
+  .casitodos {
+    width: 350px;
+    height: 250px;
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .tituloEventos {
     color: white; }
@@ -1559,6 +1740,18 @@ livestreaming {
     width: 50%; } }
 
 @media only screen and (max-width: 600px) {
+  .contenedorMain_somos--centro {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1100px;
+    background-color: palegreen;
+    display: flex;
+    flex-flow: column nowrap; }
+  .casitodos {
+    height: 250px;
+    margin-top: 20px; }
+  .ParrafoSomos {
+    margin-top: 30px; }
   /*------------------Novedades------------*/
   .contenedorTituloComunidad {
     width: 70%;
@@ -1588,16 +1781,36 @@ livestreaming {
     margin-top: 30px; }
   /*-------------------descargaAPP-----------------*/
   .contenedorMainDescarga {
-    height: 250px;
+    height: 220px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    align-items: center; }
   .contenedorFormularioDescaga {
     width: 65%;
     border-radius: 250px;
     height: 200px;
-    border-radius: 250px; } }
+    border-radius: 250px; }
+  .mainRegistro {
+    height: 350px;
+    width: 100%;
+    margin-top: 70px; }
+  .fondoRegistrate {
+    border-radius: 250px;
+    height: 300px;
+    width: 75%;
+    padding: 20px; }
+  .NewsTituloRegistro {
+    font-size: 20px;
+    margin-top: 40px; }
+  .contenedorRegistro {
+    height: 150px;
+    width: 100%; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px; }
+  .contenedorRegistroUsuario {
+    height: 50px;
+    width: 70%;
+    margin-top: 10px; } }
 
 /*----------------Registrate ---------------*/
 .contenedorPadre__Header--Somos {
@@ -1612,8 +1825,7 @@ livestreaming {
 
 .parrafoComunidad {
   color: white;
-  text-align: center;
-  background-color: powderblue; }
+  text-align: center; }
 
 .contenedorMainComunidades {
   display: grid; }
@@ -1626,9 +1838,6 @@ livestreaming {
   align-items: center; }
 
 .h2Radio {
-  text-align: center; }
-
-.parrafoRadioCultura {
   text-align: center; }
 
 .comunidadCulturaPodcast {
@@ -1646,6 +1855,30 @@ livestreaming {
   align-items: center; }
 
 /*---------------comunidades -----------------*/
+.parrafoRadioCultura {
+  background: url(../imagenes/trazo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.comunidadCulturaRadio {
+  background: url(../imagenes/radioComunidad.png);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.comunidadCulturaPodcast {
+  background: url(../imagenes/Podcast_Cover_Artwork.png);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.comunidadCulturaTelevisión {
+  background: url(../imagenes/comunidadTv.png);
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .contenedorMainRadio {
   display: grid; }
 
@@ -1679,16 +1912,16 @@ livestreaming {
   .contenedorTituloComunidad {
     height: 200px; }
   .parrafoComunidad {
-    color: white;
     font-size: 16px; }
+  .parrafoRadioCultura {
+    background-size: 100%;
+    height: 30px; }
   .contenedorMainComunidades {
-    background-color: peachpuff;
     height: 320px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px; }
   .comunidadCulturaRadio {
-    background-color: palegreen;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -1696,13 +1929,11 @@ livestreaming {
   .culturaRadioTitulo {
     width: 70%; }
   .comunidadCulturaPodcast {
-    background-color: paleturquoise;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
   .comunidadCulturaTelevisión {
-    background-color: paleturquoise;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -1730,13 +1961,16 @@ livestreaming {
   .tituloComunidadesNews {
     margin-top: 30px; }
   .parrafoRadioCultura {
-    text-align: center; }
+    background-size: 120%;
+    height: 40px;
+    width: 120%; }
   .contenedorMainComunidades {
-    background-color: peachpuff;
     height: 720px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px; }
+  .comunidadCulturaPodcast {
+    background-size: 100%; }
   /*-----------------------comunidades----------------*/
   .contenedorMainRadio {
     background-color: powderblue;
