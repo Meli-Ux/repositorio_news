@@ -1,9 +1,11 @@
+
+ .contenedorPadre__Header--News{
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
     
-.contenedorPadre__Header--Somos{
-    display: flex;
-    flex-flow: column nowrap;
-    }
-    
+ }
 .contenedorTituloComunidad{
 display: flex;
 flex-flow: column nowrap;
@@ -18,10 +20,12 @@ text-align: center;
     
 .contenedorMainComunidades{
 display: grid;
+background: -webkit-linear-gradient(to right, white, yellow, #7303c0,#393b3d); 
+background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); 
 }
 
 .comunidadCulturaRadio{
-background-color: palegreen;
+
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
@@ -33,14 +37,12 @@ text-align: center;
 }
 
 .comunidadCulturaPodcast{
-background-color: paleturquoise;
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
 }
 .comunidadCulturaTelevisión{
-background-color: paleturquoise;
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
@@ -62,26 +64,48 @@ align-items: center;
 background: url(../imagenes/radioComunidad.png);
 background-position: center;
 background-repeat: no-repeat;
+transition: 1s;
+}
+.comunidadCulturaRadio:hover{
+transform: scale(0.9);
+z-index: 2;
 }
 
 .comunidadCulturaPodcast{
 background: url(../imagenes/Podcast_Cover_Artwork.png);
 background-position: center;
 background-repeat: no-repeat;
+transition: 1s;
+}
+.comunidadCulturaPodcast:hover{
+transform: scale(0.9);
+z-index: 2;
 }
 .comunidadCulturaTelevisión{
 background: url(../imagenes/comunidadTv.png);
 background-position: center;
-background-repeat: no-repeat;}
+background-repeat: no-repeat;
+transition: 1s;
+
+}
+.comunidadCulturaTelevisión:hover{
+transform: scale(0.9);
+z-index: 2;
+}
 
 .contenedorMainRadio{
 display: grid;
+
 }
 .latinoAmerica{
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+background: url(../imagenes/radioLatina.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
 }
 .norteAmerica{
 
@@ -89,28 +113,39 @@ display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+background: url(../imagenes/radioAmericana.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
  }
 .europa{
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+background: url(../imagenes/radioEuropea.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
 }
 .asia{
 display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+background: url(../imagenes/radioAsia.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+
 }
 
+   
+   
+  
 
 @media only screen and (min-width:1201px){
-    
-.contenedorPadre__Header--Somos{
-    height: 300px;
-    
-    }
-    
+      
 .contenedorTituloComunidad{
 height: 200px;
 }
@@ -160,37 +195,19 @@ align-items: center;
 
 /*-------------------comunidades------------------*/
 .contenedorMainRadio{
-background-color: powderblue;
 display: grid;
 grid-template-columns: 1fr 1fr ;
 grid-template-rows: 1fr 1fr;
 height: 700px;
 gap: 10px;
 }
-.latinoAmerica{
-background-color: palegreen;
 
-}
-.norteAmerica{
-background-color: palegreen;
-
- }
-.europa{
-background-color: palegreen;
-
-}
-.asia{
-background-color: palegreen;
-
-}
 }
 
 
 
  @media only screen and (min-width:601px) and (max-width:1200px){
-.contenedorPadre__Header--Somos{
-height: 300px;
- }
+
  .tituloComunidadesNews{
 margin-top: 30px;
  }
@@ -215,29 +232,28 @@ background-size: 100%;
    
 
 .contenedorMainRadio{
-    background-color: powderblue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 1200px;
     gap: 10px;
     }
     .latinoAmerica{
-    background-color: palegreen;
+    
     height: 300px;
     
     }
     .norteAmerica{
-    background-color: palegreen;
+  
     height: 300px;
     
      }
     .europa{
-    background-color: palegreen;
+  
     height: 300px;
     
     }
     .asia{
-    background-color: plum;
+  
     height: 300px;
     
     }
@@ -257,6 +273,7 @@ background-size: 100%;
         font-size: $h1;
         font-family: 'Roboto Condensed', sans-serif;
         color: white;
+        text-shadow: 1px 1px 1px rgb(49, 49, 49);
         }
               
         $h2: map-get($titulo, h2);
@@ -281,19 +298,16 @@ background-size: 100%;
         color: white;
                 
         }
-.contenedorPadre__Header--Somos{
-height: 300px;
-}
+
 .tituloComunidadesNews{
 margin-top: 30px;
 
 }
 .parrafoRadioCultura{
     text-align: center;
-    background-color: papayawhip;
+  
 }
 .contenedorMainComunidades{
-background-color: peachpuff;
 height: 720px;
 display: grid;
 grid-template-rows: 1fr 1fr 1fr;
@@ -301,31 +315,29 @@ gap: 10px;
     }    
 
 /*------------comunidades--------------------*/
+.contenedorTituloComunidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contenedorMainRadio{
-    background-color: powderblue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 1200px;
-    gap: 10px;
+    gap: 5px;
     }
     .latinoAmerica{
-    background-color: palegreen;
     height: 300px;
-    
     }
     .norteAmerica{
-    background-color: palegreen;
     height: 300px;
     
      }
     .europa{
-    background-color: palegreen;
     height: 300px;
-    
     }
     .asia{
-    background-color: plum;
     height: 300px;
-    
+
     }
  }

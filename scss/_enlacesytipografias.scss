@@ -4,8 +4,13 @@
 $color:red;
 
 a{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 1px rgb(39, 39, 39);
+}
+
+.Search:hover{
+    background-color: yellow;
 }
 
 
@@ -25,6 +30,7 @@ border-radius: 20px;
 .btnPrincipal:hover {
 background-color: #393b3d;
 color: white;
+transition: 1s;
 }
 }
 
@@ -38,21 +44,21 @@ color: white;
 .play:hover{
     background-color: yellow;
     border-radius: 50px;
+    transition:0.5s;
    }
    
 
 .logoFooter{
     width: 90px;  
 }
+
 /*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
 
 
 .btnSecundarioComunidades{
-text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
 
 .btnSecundarioNovedades{
@@ -60,6 +66,9 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
+height: 100px;
+
+
  }
 
 .btnNovedades{
@@ -67,11 +76,15 @@ text-decoration: none;
 color: #393b3d;
 font-size: 16px;
 background-color: #e9e8e8;
+border-radius: 20px;
+
  }
 
 .btnNovedades:hover{
    background-color: yellow; 
-   color:#393b3d; ; }
+   color:#393b3d; 
+   transition: 1s;
+ }
 
 .btnSecundario{
 text-align: center;
@@ -87,25 +100,28 @@ color: white;
 border: solid white;
 font-size: 16px;
 border-style: solid;
+
 }
 .btnComunidades{
 text-decoration: none;
 color:#393b3d ;
-background-color: yellow;
+background-color: white;
 font-size: 16px;
 border-radius: 20px;
 }
 
 .btnComunidades:hover{
-background-color: white;
+background-color: yellow;
 color: #393b3d;
 border: none;
+transition: 1s;
 }
 
 .btnComunidad:hover{
 background-color: yellow;
 color: #393b3d;
 border: none;
+transition: 1s;
 
 }
 
@@ -122,29 +138,60 @@ border-style: solid;
 background-color: yellow;
 border: yellow;
 color: #393b3d;
+transition: 1s;
 }
 
 
-.btnEventos{
-text-decoration: none;
+
+
+.contenedorInput{
+margin-top: 15px;
+.inputEmail{
+border-radius: 10px;
+border-style: none;
+}
+.buttonNews{
+padding: 4px 50px;
+border-radius: 10px;
+border-style: none;
+background-color: yellow;
 color: #393b3d;
-font-size: 14px;
+font-weight: bold;
+}
+}
+.buttonNews:hover{
 background-color: white;
-padding: 10px 60px;  
-}
-.btnEventos:hover{
-background-color: yellow;  
-color: #393b3d;
-
+color:#393b3d ;
+transition: 1s;
 }
 
 .NewsTitulo{
     color: white;
 }
-.tituloChicoNovedad{
-    color: white;
-    margin-right: 170px;
-}
+
+/*-----------------------Registrate-----------------*/
+.email{
+    border-radius: 10px;
+    border-style: none;
+  }
+  .password{
+    border-radius: 10px;
+    border-style: none;
+  }
+  .inputRegistro{
+  display: flex;
+  flex-flow: column nowrap;
+  .inputSubmit{
+  margin-top: 20px;
+  border-radius: 10px;
+  border-style:none;
+  background-color: white;
+   }
+   .inputSubmit:hover{
+   background-color: yellow;
+   transition: 3s;
+     }
+  }
 
 
 /*------navAfter-----*/
@@ -196,13 +243,8 @@ font-family: 'Lato', sans-serif;
 
 
 
-/*----------------------------------Imput Newsletter---------------------------------------*/
-.formInput{
-background-color: red;
-display:flex;
-flex-flow: row column;
-align-items: center;
-height: 50px;}
+//*----------------------------------Imput Newsletter---------------------------------------*/
+
 /*----------------------------------Indicadores----------------------------------------------*/
 $color:red;
 .ParrafoCard{
@@ -227,9 +269,13 @@ $color:red;
     text-align: center;  
     margin-right: 30px;
 
+
     a{
         text-decoration: none;
-        color: black;
+        color: white;
+    }
+    a:hover{
+        color: yellow;
     }
 
   }
@@ -249,23 +295,34 @@ $color:red;
         background-color: #393b3d;
     }
 .contenedorMain_comunidad__tituloComunidad--secundario{ 
-background-color: palegreen;
-height: 600px;}
-.btnNovedades{
-    font-size: 16px;
-    padding: 16px 90px;  }
-                
-    .btnComunidad{
-    padding: 6px 20px;  
-    border-radius: 20px;}
-    .btnDescarga{
-    padding: 6px 20px;  
-    border-radius: 20px;}
-    .btnEventos{
-    padding: 6px 20px;  
-    border-radius: 20px;
-    }   
 
+height: 640px;}
+.btnNovedades{
+font-size: 16px;
+padding: 6px 20px;  }
+
+.btnSecundarioComunidad{
+margin-top: 20px;
+}
+      
+.btnComunidad{
+padding: 6px 20px;  
+border-radius: 20px;
+}
+.btnComunidades{
+ padding: 6px 20px;
+        }
+.btnDescarga{
+padding: 4px 20px;  
+border-radius: 20px;}
+
+.contenedorInput{
+margin-left: 50px;
+}
+.buttonNews{
+margin-top: 10px;
+margin-left: 15px;
+}   
 
 }
 
@@ -275,51 +332,68 @@ height: 600px;}
     }
 .btnNovedades{
 font-size: 16px;
-padding: 16px 30px;  }
+padding: 6px 30px;
+
+}
             
+.btnSecundarioComunidad{
+    margin-top:20px;
+    height: 40px;
+   
+}
 .btnComunidad{
 padding: 6px 30px;  
-border-radius: 20px;}
-.btnComunidades{
+border-radius: 20px;
+margin-top: 10px;
+margin-left: 160px;
 
+}
+.btnComunidades{
 font-size: 16px;
 padding: 6px 30px;
     }
 .btnDescarga{
 padding: 6px 30px;  
 border-radius: 20px;}
-.btnEventos{
-padding: 6px 30px;  
-border-radius: 20px;
+.buttonNews{
+margin-left: 8px;
 }
 }
 
 @media only screen and (min-width:1201px){
 
+.btnSecundarioComunidad{
+    margin-top: 10px;
+}
+
 .btnNovedades{
 font-size: 16px;
-padding: 10px 60px;  }
+padding: 7px 60px;  }
     
 .btnComunidad{
-    font-size: 16px;
-    padding: 7px 60px;
-    border-radius: 20px;
-    margin-top: 10px;
-    }
+font-size: 16px;
+padding: 7px 60px;
+border-radius: 20px;
+margin-top: 10px;
+margin-left: 160px;
+}
+
 
 
 .btnComunidades{
 text-decoration: none;
-background-color: yellow;
 font-size: 16px;
 padding: 7px 60px;
 }
 .btnDescarga{
 padding: 10px 60px;  
 border-radius: 20px;}
-.btnEventos{
-padding: 10px 60px;  
-border-radius: 20px;
+
+.contenedorInput{
+margin-left: 30px;
 }
+.inputEmail{
+    padding: 4px 40px;
+     }
        
 }

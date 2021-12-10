@@ -10,7 +10,6 @@ body {
   background: -webkit-linear-gradient(to right, #414345, #232526);
   background: linear-gradient(to right, #414345, #232526); }
 
-/*--------------animaciones--------------------*/
 /*---------------------------------------------------Header-------------------------------------*/
 .contenedorPadre {
   /*--------------contenedor header--------------*/
@@ -59,7 +58,7 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
     background-color: #393b3d; }
     .contenedorPadre .podcastFav .contenedorCaratula {
-      background: url(../imagenes/elClubDelMoro.png);
+      background: url(../imagenes/nosReiremosDeEsto.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%; }
@@ -71,7 +70,7 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
     background-color: #393b3d; }
   .contenedorPadre .contenedorCaratula {
-    background: url(../imagenes/elClubDelMoro.png);
+    background: url(../imagenes/casaDePapel.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%; }
@@ -100,15 +99,14 @@ body {
 .contenedorMain__comunidad__collage--mobil {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px;
   grid-auto-flow: dense;
   gap: 10px; }
 
 .imgComunidadRadio {
-  background: url(../imagenes/equipo03.jpg);
+  background: url(../imagenes/radio.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 180%;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -116,7 +114,7 @@ body {
 
 .imgComunidadRadio .hover {
   width: 0%;
-  height: 80vh;
+  height: 90vh;
   background-color: rgba(57, 59, 61, 0.383);
   position: absolute;
   top: 0;
@@ -129,10 +127,10 @@ body {
   width: 100%; }
 
 .imgComunidadPodcast {
-  background: url(../imagenes/equipo02.jpg);
+  background: url(../imagenes/podcast.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 180%;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -140,7 +138,7 @@ body {
 
 .imgComunidadPodcast .hover {
   width: 0%;
-  height: 80vh;
+  height: 90vh;
   background-color: rgba(255, 17, 156, 0.301);
   position: absolute;
   top: 0;
@@ -153,10 +151,10 @@ body {
   width: 100%; }
 
 .imgComunidadTelevision {
-  background: url(../imagenes/equipo04.jpg);
+  background: url(../imagenes/tv.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 180%;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -164,7 +162,7 @@ body {
 
 .imgComunidadTelevision .hover {
   width: 0%;
-  height: 80vh;
+  height: 90vh;
   background-color: rgba(255, 251, 17, 0.301);
   position: absolute;
   top: 0;
@@ -181,6 +179,11 @@ body {
   width: 100%; }
 
 /*-----------------------index------------------*/
+.contenedorMain__comunidad--blanco {
+  background: #393b3d;
+  background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+  background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
+
 .contenedorMain_comunidad__tituloComunidad--secundario {
   display: flex;
   align-items: center;
@@ -190,16 +193,23 @@ body {
 .contenedorTitulosComunidad {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
+  width: 80%; }
 
-.tituloChico {
-  margin-right: 450px;
-  background-color: purple; }
+.tituloChicoComunidad {
+  text-align: center;
+  background: url(../imagenes/trazo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold; }
 
 span {
-  color: yellow;
-  text-transform: uppercase; }
+  background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+  background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d);
+  padding: 15px;
+  border: 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: 1s; }
 
 /*---------------------------------------------------NovedadesComunidad----------------------------*/
 .contenedorMain__novedades--centrado {
@@ -210,48 +220,63 @@ span {
   align-items: center;
   justify-content: center; }
   .contenedorMain__novedades--centrado .contenedorMain__novedades__TituloNovedades {
-    margin: 20px;
-    margin-left: 30px;
-    height: 200px; }
-  .contenedorMain__novedades--centrado .ParrafoCard {
-    height: 100px;
-    width: 85%;
-    margin-top: 20px;
-    text-align: justify; }
-  .contenedorMain__novedades--centrado .btnSecundario {
-    margin-top: 30px; }
-  .contenedorMain__novedades--centrado .cardEspectactulo {
-    height: 400px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #393b3d; }
+    margin: 20px;
+    margin-left: 20px;
+    height: 250px;
+    width: 100%; }
+  .contenedorMain__novedades--centrado .contenedorTitulosNovedades {
+    display: flex;
+    flex-flow: column nowrap; }
+  .contenedorMain__novedades--centrado .contenedorCard {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contenedorMain__novedades--centrado .ParrafoCard {
+    height: 100px;
+    width: 85%;
+    margin-top: 30px;
+    text-align: justify; }
+  .contenedorMain__novedades--centrado .btnSecundario {
+    margin-top: 30px; }
+  .contenedorMain__novedades--centrado .cardEspectactulo {
+    height: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #393b3d;
+    border-radius: 10px; }
     .contenedorMain__novedades--centrado .cardEspectactulo .imagenCard {
-      background: url(../imagenes/novedades.jpg);
+      background: url(../imagenes/eventos.png);
       background-position: center;
       background-repeat: no-repeat;
+      border-radius: 10px;
       background-size: 150%;
       height: 350px;
-      width: 100%;
-      border-top: 40px; }
+      width: 100%; }
   .contenedorMain__novedades--centrado .cardMundoCine {
-    height: 400px;
+    height: 450px;
+    border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     background-color: #393b3d; }
     .contenedorMain__novedades--centrado .cardMundoCine .imagenCard {
-      background: url(../imagenes/novedades.jpg);
+      background: url(../imagenes/noticias.png);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 150%;
+      background-size: 100%;
       height: 350px;
       width: 100%;
-      border-top: 40px; }
+      border-radius: 10px; }
   .contenedorMain__novedades--centrado .cardCultura {
-    height: 400px;
+    height: 450px;
+    border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -264,14 +289,17 @@ span {
       background-size: 150%;
       height: 350px;
       width: 100%;
-      border-top: 40px; }
+      border-radius: 10px; }
 
 /*---------------llave del contenedorMain_novedades-----------------------*/
 /*-----------------ContenedorNewsletter---------------*/
 .contenedorMain__newsletter {
   display: grid;
   gap: 10px;
-  margin-top: 40px; }
+  margin-top: 90px;
+  background: #393b3d;
+  background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+  background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
 
 .contenedorNew {
   display: flex;
@@ -282,14 +310,13 @@ span {
 .contenedorTituloNewsLetter {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
+  width: 80%; }
 
 .contenedorNewsContenido {
   display: grid;
   gap: 10px; }
   .contenedorNewsContenido .contenedorCultura {
-    background: url(../imagenes/somosComunidad.jpg);
+    background: url(../imagenes/articulopodcast.jpg);
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -298,8 +325,8 @@ span {
     object-fit: cover; }
   .contenedorNewsContenido .contenedorCultura .hoverNews {
     width: 0%;
-    height: 80vh;
-    background: url(../imagenes/comunidadtelevisión.jpg);
+    height: 90vh;
+    background: url(../imagenes/hoverCultura.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -311,7 +338,7 @@ span {
   .contenedorNewsContenido .contenedorCultura:hover .hoverNews {
     width: 100%; }
   .contenedorNewsContenido .contenedorSocial {
-    background: url(../imagenes/articuloestación.png);
+    background: url(../imagenes/articuloestación.jpg);
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -320,8 +347,8 @@ span {
     object-fit: cover; }
   .contenedorNewsContenido .contenedorSocial .hoverNews {
     width: 0%;
-    height: 80vh;
-    background: url(../imagenes/comunidadSomos.jpg);
+    height: 90vh;
+    background: url(../imagenes/hoverSocial.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -342,8 +369,8 @@ span {
     object-fit: cover; }
   .contenedorNewsContenido .contenedorEquipoSomos .hoverNews {
     width: 0%;
-    height: 80vh;
-    background: url(../imagenes/Podcast_Cover_Artwork.png);
+    height: 90vh;
+    background: url(../imagenes/radio.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -359,7 +386,7 @@ span {
 footer {
   display: flex;
   align-items: center;
-  margin-top: 30px; }
+  margin-top: 60px; }
   footer .logFooter {
     height: 170px;
     flex: 2 1 auto;
@@ -372,13 +399,14 @@ footer {
     height: 170px;
     flex: 1 1 auto; }
   footer .redesFooter {
-    height: 170px;
     display: flex;
     flex: 2 1 auto;
     align-items: center;
-    justify-content: center; }
-    footer .redesFooter .logosRedesFooter .enlaceRedes {
-      color: white; }
+    justify-content: center;
+    height: 100px; }
+  footer .logosRedesFooter {
+    display: flex;
+    flex-flow: row nowrap; }
 
 /*-----------------------comunidadMain----------------------------------*/
 @media only screen and (min-width: 1201px) {
@@ -398,29 +426,32 @@ footer {
     width: 100%;
     background: #232526;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(64, 66, 68, 0.555), rgba(34, 36, 37, 0.555)), url(../imagenes/fondoHeaderTitulo.png);
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.609), rgba(255, 255, 0, 0.418), rgba(116, 3, 191, 0.424), #393b3d);
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.596), rgba(236, 54, 188, 0.438), rgba(57, 59, 60, 0.445), #393b3d), url(../imagenes/fondoHeaderTitulo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%; }
   h1 {
     font-size: 4em;
     font-family: 'Roboto Condensed', sans-serif;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 1px #313131; }
   h2 {
     font-size: 3em;
     font-family: 'Roboto Condensed', sans-serif;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 1px #313131; }
   h3 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 1px #313131; }
   h4 {
     font-size: 1em;
     font-family: 'Lato', sans-serif;
-    color: white; }
-  .TituloComunidad {
+    color: white;
+    text-shadow: 1px 1px 1px #313131; }
+  .TituloComunidadComunidad {
     width: 80%; }
   .contenedorPadre__Header--principal {
     height: 1700px;
@@ -445,9 +476,20 @@ footer {
       background-size: 100%; }
     .radioFav .contenedorTituloFavRadio .favDelmes {
       margin-top: 40px;
-      margin-left: 12px; }
+      margin-left: 12px;
+      font-size: 16px;
+      text-shadow: 1px 1px 1px #272626; }
     .radioFav .favRadio .favRadioTitulo {
       margin-left: 15px; }
+  .tituloChicoComunidad {
+    color: #393b3d;
+    width: 200px;
+    padding: 20px;
+    background-size: 100%;
+    text-transform: uppercase; }
+  .TituloComunidad {
+    margin-left: 20px;
+    margin-bottom: 35px; }
   .podcastFav {
     gap: 10px;
     background-color: #393b3d; }
@@ -456,13 +498,8 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%; }
-    .podcastFav .contenedorTituloStacion {
-      gap: 5px; }
-      .podcastFav .contenedorTituloStacion .contenedorTituloFavRadio .favDelmes {
-        margin-top: 40px;
-        margin-left: 12px; }
-      .podcastFav .contenedorTituloStacion .favRadio .favRadioTitulo {
-        margin-left: 15px; }
+  .contenedorTituloStacion {
+    gap: 5px; }
   .eventoDelMes {
     gap: 10px; }
   .contenedorCaratula {
@@ -477,14 +514,16 @@ footer {
       margin-left: 12px; }
     .contenedorTituloStacion .favRadio .favRadioTitulo {
       margin-left: 15px; }
-  .contenedorMain__novedades__TituloNovedades {
-    width: 50%; }
+  .contenedorMain__comunidad__collage--mobil {
+    grid-template-rows: 500px; }
   /*---------------------NOVEDADES------------------*/
+  .contenedorTitulosNovedades {
+    width: 50%; }
+  .TituloNovedades {
+    margin-left: 20px; }
   .contenedorCard {
     width: 50%;
     height: 500px;
-    display: flex;
-    margin-top: 30px;
     flex-flow: row nowrap; }
   .cardMundoCine {
     margin-left: 30px;
@@ -498,7 +537,8 @@ footer {
   .contenedorNew {
     height: 500px; }
     .contenedorNew .newsLetterTitulo {
-      width: 70%; }
+      width: 90%;
+      margin-left: 30px; }
   .contenedorNewsContenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -507,7 +547,13 @@ footer {
   .footer {
     display: flex;
     flex-flow: row nowrap;
-    height: 250px; } }
+    height: 250px; }
+  .enlaceRedes {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px; }
+  .enlaceRedes:hover {
+    color: yellow; } }
 
 /*----------------------llaveMAIN------------------------*/
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
@@ -591,6 +637,8 @@ footer {
       margin-left: 12px; }
     .contenedorTituloStacion .favRadio .favRadioTitulo {
       margin-left: 15px; }
+  .contenedorMain__comunidad__collage--mobil {
+    grid-template-rows: 500px; }
   .contenedorMain__comunidad--blanco {
     display: flex;
     flex-flow: column nowrap;
@@ -598,10 +646,22 @@ footer {
   .contenedorMain_comunidad__tituloComunidad--secundario {
     margin-top: 20px;
     height: 400px; }
+  .tituloChicoComunidad {
+    color: #393b3d;
+    width: 200px;
+    padding: 20px;
+    background-size: 100%;
+    text-transform: uppercase; }
+  .TituloComunidad {
+    margin-left: 10px; }
   .contenedorMain__novedades--centrado {
     margin-top: 100px; }
   .contenedorMain__novedades__TituloNovedades {
     width: 75%; }
+  .contenedorTitulosNovedades {
+    width: 85%; }
+  .TituloNovedades {
+    margin-left: 10px; }
   .contenedorCard {
     margin: 20px;
     display: flex;
@@ -623,7 +683,9 @@ footer {
   .contenedorNew {
     height: 400px; }
   .contenedorTituloNewsLetter {
-    width: 60%; }
+    justify-content: center;
+    align-items: center;
+    width: 75%; }
   .newsLetterTitulo {
     text-align: center; }
   .contenedorNewsContenido {
@@ -633,12 +695,18 @@ footer {
   .footer {
     display: flex;
     flex-flow: row nowrap;
-    height: 250px; } }
+    height: 250px; }
+  .enlaceRedes {
+    color: white;
+    font-size: 25px;
+    margin-right: 10px; }
+  .enlaceRedes:hover {
+    color: yellow; } }
 
 /*padre*/
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
     color: white; }
   h2 {
@@ -667,19 +735,42 @@ footer {
   .contenedorTituloStacion {
     margin-left: 15px; }
   .contenedorMain {
-    margin-top: 40px; }
+    margin-top: 240px; }
+  .contenedorMain__comunidad__collage--mobil {
+    grid-template-rows: 300px; }
   .contenedorMain__comunidad--blanco {
     display: flex;
     flex-flow: column nowrap; }
     .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario {
       height: 300px; }
       .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario .contenedorTitulosComunidad {
-        height: 300px;
-        width: 75%; }
+        height: 370px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .contenedorMain__comunidad--blanco .contenedorMain_comunidad__tituloComunidad--secundario .TituloComunidad {
+        margin-left: 10px;
+        text-align: center; }
+  .tituloChicoComunidad {
+    color: #393b3d;
+    width: 250px;
+    padding: 20px;
+    background-size: 100%;
+    text-transform: uppercase; }
   .contenedorMain__novedades--centrado {
     margin-top: 50px; }
   .contenedorMain__novedades__TituloNovedades {
-    width: 75%; }
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contenedorTitulosNovedades {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .TituloNovedades {
+    text-align: center; }
   .contenedorCard {
     margin: 20px;
     display: flex;
@@ -701,32 +792,39 @@ footer {
   .contenedorNew {
     height: 300px; }
   .contenedorTituloNewsLetter {
+    justify-content: center;
+    align-items: center;
     width: 80%; }
   .newsLetterTitulo {
     text-align: center; }
   .contenedorNewsContenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 300px; }
+    gap: 10px;
+    height: 300px;
+    margin-top: 60px; }
   .footer {
     display: flex;
     flex-flow: column nowrap;
     height: 450px;
     align-items: center;
     margin-top: 60px; }
-  .contenedorInput {
-    text-align: center; }
-    .contenedorInput .inpuyEmail {
-      border-radius: 20px; }
-    .contenedorInput .buttonNews {
-      background-color: pink;
-      padding: 10px 30px; } }
+  .enlaceRedes {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px; }
+  .enlaceRedes:hover {
+    color: yellow; } }
 
 /*-------------------------ENLACES A-------------------------------*/
 /*-----------------------BtnPrincipal tablet y escritorio----------------------------*/
 a {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif; }
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 1px #272727; }
+
+.Search:hover {
+  background-color: yellow; }
 
 .contenedorTituloPrincipal__btnPrincipal--azul {
   margin-top: 20px; }
@@ -739,7 +837,8 @@ a {
     border-radius: 20px; }
   .contenedorTituloPrincipal__btnPrincipal--azul .btnPrincipal:hover {
     background-color: #393b3d;
-    color: white; }
+    color: white;
+    transition: 1s; }
 
 .logo {
   width: 100px; }
@@ -749,14 +848,14 @@ a {
 
 .play:hover {
   background-color: yellow;
-  border-radius: 50px; }
+  border-radius: 50px;
+  transition: 0.5s; }
 
 .logoFooter {
   width: 90px; }
 
 /*------------------------BTN SECUNDARIO Tablet y escritorio----------------------------*/
 .btnSecundarioComunidades {
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -765,17 +864,20 @@ a {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 100px; }
 
 .btnNovedades {
   text-decoration: none;
   color: #393b3d;
   font-size: 16px;
-  background-color: #e9e8e8; }
+  background-color: #e9e8e8;
+  border-radius: 20px; }
 
 .btnNovedades:hover {
   background-color: yellow;
-  color: #393b3d; }
+  color: #393b3d;
+  transition: 1s; }
 
 .btnSecundario {
   text-align: center;
@@ -793,19 +895,21 @@ a {
 .btnComunidades {
   text-decoration: none;
   color: #393b3d;
-  background-color: yellow;
+  background-color: white;
   font-size: 16px;
   border-radius: 20px; }
 
 .btnComunidades:hover {
-  background-color: white;
+  background-color: yellow;
   color: #393b3d;
-  border: none; }
+  border: none;
+  transition: 1s; }
 
 .btnComunidad:hover {
   background-color: yellow;
   color: #393b3d;
-  border: none; }
+  border: none;
+  transition: 1s; }
 
 .btnDescarga {
   text-decoration: none;
@@ -817,25 +921,50 @@ a {
 .btnDescarga:hover {
   background-color: yellow;
   border: yellow;
-  color: #393b3d; }
-
-.btnEventos {
-  text-decoration: none;
   color: #393b3d;
-  font-size: 14px;
-  background-color: white;
-  padding: 10px 60px; }
+  transition: 1s; }
 
-.btnEventos:hover {
-  background-color: yellow;
-  color: #393b3d; }
+.contenedorInput {
+  margin-top: 15px; }
+  .contenedorInput .inputEmail {
+    border-radius: 10px;
+    border-style: none; }
+  .contenedorInput .buttonNews {
+    padding: 4px 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: yellow;
+    color: #393b3d;
+    font-weight: bold; }
+
+.buttonNews:hover {
+  background-color: white;
+  color: #393b3d;
+  transition: 1s; }
 
 .NewsTitulo {
   color: white; }
 
-.tituloChicoNovedad {
-  color: white;
-  margin-right: 170px; }
+/*-----------------------Registrate-----------------*/
+.email {
+  border-radius: 10px;
+  border-style: none; }
+
+.password {
+  border-radius: 10px;
+  border-style: none; }
+
+.inputRegistro {
+  display: flex;
+  flex-flow: column nowrap; }
+  .inputRegistro .inputSubmit {
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: white; }
+  .inputRegistro .inputSubmit:hover {
+    background-color: yellow;
+    transition: 3s; }
 
 /*------navAfter-----*/
 .nav-item {
@@ -862,14 +991,6 @@ a {
   color: white;
   font-family: 'Lato', sans-serif; }
 
-/*----------------------------------Imput Newsletter---------------------------------------*/
-.formInput {
-  background-color: red;
-  display: flex;
-  flex-flow: row column;
-  align-items: center;
-  height: 50px; }
-
 /*----------------------------------Indicadores----------------------------------------------*/
 .ParrafoCard {
   color: white;
@@ -884,7 +1005,9 @@ ul {
     margin-right: 30px; }
     ul .listaFooter a {
       text-decoration: none;
-      color: black; }
+      color: white; }
+    ul .listaFooter a:hover {
+      color: yellow; }
 
 /*----------------------------------------HoverMenu------------------------------------------*/
 .menuTexto:hover {
@@ -896,60 +1019,72 @@ ul {
   .collapse {
     background-color: #393b3d; }
   .contenedorMain_comunidad__tituloComunidad--secundario {
-    background-color: palegreen;
-    height: 600px; }
+    height: 640px; }
   .btnNovedades {
     font-size: 16px;
-    padding: 16px 90px; }
+    padding: 6px 20px; }
+  .btnSecundarioComunidad {
+    margin-top: 20px; }
   .btnComunidad {
     padding: 6px 20px;
     border-radius: 20px; }
+  .btnComunidades {
+    padding: 6px 20px; }
   .btnDescarga {
-    padding: 6px 20px;
+    padding: 4px 20px;
     border-radius: 20px; }
-  .btnEventos {
-    padding: 6px 20px;
-    border-radius: 20px; } }
+  .contenedorInput {
+    margin-left: 50px; }
+  .buttonNews {
+    margin-top: 10px;
+    margin-left: 15px; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
   .collapse {
     background-color: #393b3d; }
   .btnNovedades {
     font-size: 16px;
-    padding: 16px 30px; }
+    padding: 6px 30px; }
+  .btnSecundarioComunidad {
+    margin-top: 20px;
+    height: 40px; }
   .btnComunidad {
     padding: 6px 30px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 160px; }
   .btnComunidades {
     font-size: 16px;
     padding: 6px 30px; }
   .btnDescarga {
     padding: 6px 30px;
     border-radius: 20px; }
-  .btnEventos {
-    padding: 6px 30px;
-    border-radius: 20px; } }
+  .buttonNews {
+    margin-left: 8px; } }
 
 @media only screen and (min-width: 1201px) {
+  .btnSecundarioComunidad {
+    margin-top: 10px; }
   .btnNovedades {
     font-size: 16px;
-    padding: 10px 60px; }
+    padding: 7px 60px; }
   .btnComunidad {
     font-size: 16px;
     padding: 7px 60px;
     border-radius: 20px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-left: 160px; }
   .btnComunidades {
     text-decoration: none;
-    background-color: yellow;
     font-size: 16px;
     padding: 7px 60px; }
   .btnDescarga {
     padding: 10px 60px;
     border-radius: 20px; }
-  .btnEventos {
-    padding: 10px 60px;
-    border-radius: 20px; } }
+  .contenedorInput {
+    margin-left: 30px; }
+  .inputEmail {
+    padding: 4px 40px; } }
 
 /*-----------------------------QUIENES SOMOS-----------------------------*/
 .contenedorPadre__Header--Somos {
@@ -975,7 +1110,7 @@ ul {
   width: 1440px; }
 
 .collage {
-  background: url(../imagenes/equipo02.jpg);
+  background: url(../imagenes/somosComunidad.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1003,11 +1138,10 @@ ul {
 */
 /*---------------------------Descarga-------------------------------*/
 .contenedorMainDescarga {
-  background: url(../imagenes/NuestraApp.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: 40px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
   .contenedorMainDescarga .contenedorFormularioDescaga {
     display: flex;
     justify-content: center;
@@ -1016,7 +1150,13 @@ ul {
     .contenedorMainDescarga .contenedorFormularioDescaga .tituloPrincipalDescarga {
       display: flex;
       flex-flow: column nowrap;
-      text-align: center; }
+      text-align: center;
+      justify-content: center; }
+    .contenedorMainDescarga .contenedorFormularioDescaga .containerDescargaTitulo {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
     .contenedorMainDescarga .contenedorFormularioDescaga .parrafoDescarga {
       color: white; }
 
@@ -1029,34 +1169,50 @@ ul {
 
 /*-----------------LLAVE DE ContenedorMainNovedades----------------*/
 .conciertos {
-  background: url(../imagenes/articuloestación.jpg);
+  background: url(../imagenes/conciertoEvento.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 1s;
+  margin-bottom: 10px; }
+
+.conciertos:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 .entrevistas {
-  background: url(../imagenes/articuloestación.jpg);
+  background: url(../imagenes/entrevistaEventos.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 1s; }
+
+.entrevistas:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 .livestreaming {
-  background: url(../imagenes/articuloestación.jpg);
+  background: url(../imagenes/estrenosEventos.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 1s; }
+
+.livestreaming:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 conciertos {
   background-color: rgba(255, 255, 255, 0.24);
@@ -1076,7 +1232,8 @@ conciertos {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(75, 70, 70, 0.726); }
+  background-color: rgba(75, 70, 70, 0.726);
+  transition: 2s; }
 
 .NewsTituloRegistro {
   text-align: center; }
@@ -1086,12 +1243,6 @@ conciertos {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
-
-.inputRegistro {
-  display: flex;
-  flex-flow: column nowrap; }
-  .inputRegistro .inputSubmit {
-    margin-top: 20px; }
 
 .contenedorRegistroUsuario {
   display: flex;
@@ -1104,6 +1255,16 @@ conciertos {
 
 .cuenta:hover {
   color: yellow; }
+
+.containerImgConcierto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.h2eventos {
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.596); }
 
 @media only screen and (min-width: 1201px) {
   .contenedorMain_somos--centro {
@@ -1119,35 +1280,42 @@ conciertos {
   .ParrafoSomos {
     margin-top: 20px; }
   .contenedorMainNovedades {
-    height: 380px;
+    height: 370px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     height: 350px;
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
   .conciertos {
     height: 330px; }
   .entrevistas {
     height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
+    margin-left: 15px;
+    margin-right: 15px; }
   .livestreaming {
     height: 330px; }
   /*----------------------descargaApp----------------------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    gap: 10px;
+    margin-top: 40px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 400px; }
+    height: 500px;
+    border-radius: 240px; }
   .mainRegistro {
     height: 450px;
     width: 100%;
@@ -1187,15 +1355,20 @@ conciertos {
   .contenedorMainNovedades {
     display: flex;
     height: 900px;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     display: flex;
     flex-flow: column nowrap;
-    width: 70%;
+    width: 100%;
     height: 1000px;
     margin-top: 60px; }
+  .h2eventos {
+    width: 60%; }
   .conciertos {
-    height: 330px; }
+    height: 330px;
+    margin-top: 40px; }
   .entrevistas {
     height: 330px;
     margin-top: 30px; }
@@ -1204,16 +1377,20 @@ conciertos {
     margin-top: 30px; }
   /*-----------------DescargaAPP------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 250px;
-    border-radius: 250px; }
+    height: 450px;
+    width: 90%;
+    border-radius: 200px; }
   /*--------------------------Registro-----------------------*/
   .mainRegistro {
     height: 450px;
@@ -1253,39 +1430,17 @@ conciertos {
   .contenedorTituloComunidad {
     width: 70%;
     text-align: center; }
-  .tituloChicoNovedad {
-    margin-left: 105px; }
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 1100px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1100px;
-    margin-top: 40px;
-    background-color: palegreen; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-------------------descargaAPP-----------------*/
+  /*-------------------descargaAPP------------------*/
   .contenedorMainDescarga {
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
   .contenedorFormularioDescaga {
-    width: 65%;
-    border-radius: 250px;
-    height: 200px;
+    height: 400px;
     border-radius: 250px; }
   .mainRegistro {
     height: 350px;
@@ -1308,6 +1463,18 @@ conciertos {
     height: 50px;
     width: 70%;
     margin-top: 10px; } }
+
+.conciertos {
+  height: 330px;
+  margin-top: 40px; }
+
+.entrevistas {
+  height: 330px;
+  margin-top: 30px; }
+
+.livestreaming {
+  height: 330px;
+  margin-top: 30px; }
 
 entrevistas {
   background-color: rgba(255, 255, 255, 0.24);
@@ -1327,7 +1494,8 @@ entrevistas {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(75, 70, 70, 0.726); }
+  background-color: rgba(75, 70, 70, 0.726);
+  transition: 2s; }
 
 .NewsTituloRegistro {
   text-align: center; }
@@ -1337,12 +1505,6 @@ entrevistas {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
-
-.inputRegistro {
-  display: flex;
-  flex-flow: column nowrap; }
-  .inputRegistro .inputSubmit {
-    margin-top: 20px; }
 
 .contenedorRegistroUsuario {
   display: flex;
@@ -1355,6 +1517,16 @@ entrevistas {
 
 .cuenta:hover {
   color: yellow; }
+
+.containerImgConcierto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.h2eventos {
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.596); }
 
 @media only screen and (min-width: 1201px) {
   .contenedorMain_somos--centro {
@@ -1370,35 +1542,42 @@ entrevistas {
   .ParrafoSomos {
     margin-top: 20px; }
   .contenedorMainNovedades {
-    height: 380px;
+    height: 370px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     height: 350px;
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
   .conciertos {
     height: 330px; }
   .entrevistas {
     height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
+    margin-left: 15px;
+    margin-right: 15px; }
   .livestreaming {
     height: 330px; }
   /*----------------------descargaApp----------------------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    gap: 10px;
+    margin-top: 40px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 400px; }
+    height: 500px;
+    border-radius: 240px; }
   .mainRegistro {
     height: 450px;
     width: 100%;
@@ -1438,15 +1617,20 @@ entrevistas {
   .contenedorMainNovedades {
     display: flex;
     height: 900px;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     display: flex;
     flex-flow: column nowrap;
-    width: 70%;
+    width: 100%;
     height: 1000px;
     margin-top: 60px; }
+  .h2eventos {
+    width: 60%; }
   .conciertos {
-    height: 330px; }
+    height: 330px;
+    margin-top: 40px; }
   .entrevistas {
     height: 330px;
     margin-top: 30px; }
@@ -1455,16 +1639,20 @@ entrevistas {
     margin-top: 30px; }
   /*-----------------DescargaAPP------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 250px;
-    border-radius: 250px; }
+    height: 450px;
+    width: 90%;
+    border-radius: 200px; }
   /*--------------------------Registro-----------------------*/
   .mainRegistro {
     height: 450px;
@@ -1504,39 +1692,17 @@ entrevistas {
   .contenedorTituloComunidad {
     width: 70%;
     text-align: center; }
-  .tituloChicoNovedad {
-    margin-left: 105px; }
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 1100px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1100px;
-    margin-top: 40px;
-    background-color: palegreen; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-------------------descargaAPP-----------------*/
+  /*-------------------descargaAPP------------------*/
   .contenedorMainDescarga {
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
   .contenedorFormularioDescaga {
-    width: 65%;
-    border-radius: 250px;
-    height: 200px;
+    height: 400px;
     border-radius: 250px; }
   .mainRegistro {
     height: 350px;
@@ -1559,6 +1725,18 @@ entrevistas {
     height: 50px;
     width: 70%;
     margin-top: 10px; } }
+
+.conciertos {
+  height: 330px;
+  margin-top: 40px; }
+
+.entrevistas {
+  height: 330px;
+  margin-top: 30px; }
+
+.livestreaming {
+  height: 330px;
+  margin-top: 30px; }
 
 livestreaming {
   background-color: rgba(255, 255, 255, 0.24);
@@ -1578,7 +1756,8 @@ livestreaming {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(75, 70, 70, 0.726); }
+  background-color: rgba(75, 70, 70, 0.726);
+  transition: 2s; }
 
 .NewsTituloRegistro {
   text-align: center; }
@@ -1588,12 +1767,6 @@ livestreaming {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
-
-.inputRegistro {
-  display: flex;
-  flex-flow: column nowrap; }
-  .inputRegistro .inputSubmit {
-    margin-top: 20px; }
 
 .contenedorRegistroUsuario {
   display: flex;
@@ -1606,6 +1779,16 @@ livestreaming {
 
 .cuenta:hover {
   color: yellow; }
+
+.containerImgConcierto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.h2eventos {
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.596); }
 
 @media only screen and (min-width: 1201px) {
   .contenedorMain_somos--centro {
@@ -1621,35 +1804,42 @@ livestreaming {
   .ParrafoSomos {
     margin-top: 20px; }
   .contenedorMainNovedades {
-    height: 380px;
+    height: 370px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     height: 350px;
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
   .conciertos {
     height: 330px; }
   .entrevistas {
     height: 330px;
-    margin-left: 20px;
-    margin-right: 20px; }
+    margin-left: 15px;
+    margin-right: 15px; }
   .livestreaming {
     height: 330px; }
   /*----------------------descargaApp----------------------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    gap: 10px;
+    margin-top: 40px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 400px; }
+    height: 500px;
+    border-radius: 240px; }
   .mainRegistro {
     height: 450px;
     width: 100%;
@@ -1689,15 +1879,20 @@ livestreaming {
   .contenedorMainNovedades {
     display: flex;
     height: 900px;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+    background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
   .contenedorEventos {
     display: flex;
     flex-flow: column nowrap;
-    width: 70%;
+    width: 100%;
     height: 1000px;
     margin-top: 60px; }
+  .h2eventos {
+    width: 60%; }
   .conciertos {
-    height: 330px; }
+    height: 330px;
+    margin-top: 40px; }
   .entrevistas {
     height: 330px;
     margin-top: 30px; }
@@ -1706,16 +1901,20 @@ livestreaming {
     margin-top: 30px; }
   /*-----------------DescargaAPP------------*/
   .contenedorMainDescarga {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
+  .tituloDescarga {
+    width: 60%;
+    text-align: center; }
   .contenedorFormularioDescaga {
-    width: 45%;
-    border-radius: 250px;
-    height: 250px;
-    border-radius: 250px; }
+    height: 450px;
+    width: 90%;
+    border-radius: 200px; }
   /*--------------------------Registro-----------------------*/
   .mainRegistro {
     height: 450px;
@@ -1755,39 +1954,17 @@ livestreaming {
   .contenedorTituloComunidad {
     width: 70%;
     text-align: center; }
-  .tituloChicoNovedad {
-    margin-left: 105px; }
-  .tituloEventos {
-    color: white; }
-  .contenedorMainNovedades {
-    display: flex;
-    height: 1100px;
-    flex-flow: column nowrap; }
-  .contenedorEventos {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 70%;
-    height: 1100px;
-    margin-top: 40px;
-    background-color: palegreen; }
-  .conciertos {
-    height: 330px; }
-  .entrevistas {
-    height: 330px;
-    margin-top: 30px; }
-  .livestreaming {
-    height: 330px;
-    margin-top: 30px; }
-  /*-------------------descargaAPP-----------------*/
+  /*-------------------descargaAPP------------------*/
   .contenedorMainDescarga {
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background: url(../imagenes/NuestraApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240%;
+    gap: 10px;
+    height: 500px;
+    margin-top: 60px; }
   .contenedorFormularioDescaga {
-    width: 65%;
-    border-radius: 250px;
-    height: 200px;
+    height: 400px;
     border-radius: 250px; }
   .mainRegistro {
     height: 350px;
@@ -1811,10 +1988,24 @@ livestreaming {
     width: 70%;
     margin-top: 10px; } }
 
+.conciertos {
+  height: 330px;
+  margin-top: 40px; }
+
+.entrevistas {
+  height: 330px;
+  margin-top: 30px; }
+
+.livestreaming {
+  height: 330px;
+  margin-top: 30px; }
+
 /*----------------Registrate ---------------*/
-.contenedorPadre__Header--Somos {
+.contenedorPadre__Header--News {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .contenedorTituloComunidad {
   display: flex;
@@ -1827,10 +2018,11 @@ livestreaming {
   text-align: center; }
 
 .contenedorMainComunidades {
-  display: grid; }
+  display: grid;
+  background: -webkit-linear-gradient(to right, white, yellow, #7303c0, #393b3d);
+  background: linear-gradient(to right, #ffff00, #ec38bc, #7303c0, #393b3d); }
 
 .comunidadCulturaRadio {
-  background-color: palegreen;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1840,14 +2032,12 @@ livestreaming {
   text-align: center; }
 
 .comunidadCulturaPodcast {
-  background-color: paleturquoise;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
 
 .comunidadCulturaTelevisión {
-  background-color: paleturquoise;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1866,17 +2056,32 @@ livestreaming {
 .comunidadCulturaRadio {
   background: url(../imagenes/radioComunidad.png);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 1s; }
+
+.comunidadCulturaRadio:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 .comunidadCulturaPodcast {
   background: url(../imagenes/Podcast_Cover_Artwork.png);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 1s; }
+
+.comunidadCulturaPodcast:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 .comunidadCulturaTelevisión {
   background: url(../imagenes/comunidadTv.png);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: 1s; }
+
+.comunidadCulturaTelevisión:hover {
+  transform: scale(0.9);
+  z-index: 2; }
 
 .contenedorMainRadio {
   display: grid; }
@@ -1885,29 +2090,43 @@ livestreaming {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../imagenes/radioLatina.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 .norteAmerica {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../imagenes/radioAmericana.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 .europa {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../imagenes/radioEuropea.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 .asia {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../imagenes/radioAsia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 @media only screen and (min-width: 1201px) {
-  .contenedorPadre__Header--Somos {
-    height: 300px; }
   .contenedorTituloComunidad {
     height: 200px; }
   .parrafoComunidad {
@@ -1939,24 +2158,13 @@ livestreaming {
     align-items: center; }
   /*-------------------comunidades------------------*/
   .contenedorMainRadio {
-    background-color: powderblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 700px;
-    gap: 10px; }
-  .latinoAmerica {
-    background-color: palegreen; }
-  .norteAmerica {
-    background-color: palegreen; }
-  .europa {
-    background-color: palegreen; }
-  .asia {
-    background-color: palegreen; } }
+    gap: 10px; } }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
-  .contenedorPadre__Header--Somos {
-    height: 300px; }
   .tituloComunidadesNews {
     margin-top: 30px; }
   .parrafoRadioCultura {
@@ -1972,29 +2180,25 @@ livestreaming {
     background-size: 100%; }
   /*-----------------------comunidades----------------*/
   .contenedorMainRadio {
-    background-color: powderblue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 1200px;
     gap: 10px; }
   .latinoAmerica {
-    background-color: palegreen;
     height: 300px; }
   .norteAmerica {
-    background-color: palegreen;
     height: 300px; }
   .europa {
-    background-color: palegreen;
     height: 300px; }
   .asia {
-    background-color: plum;
     height: 300px; } }
 
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 3em;
     font-family: 'Roboto Condensed', sans-serif;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 1px #313131; }
   h2 {
     font-size: 2em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -2006,35 +2210,30 @@ livestreaming {
   h4 {
     font-size: 1.1em;
     color: white; }
-  .contenedorPadre__Header--Somos {
-    height: 300px; }
   .tituloComunidadesNews {
     margin-top: 30px; }
   .parrafoRadioCultura {
-    text-align: center;
-    background-color: papayawhip; }
+    text-align: center; }
   .contenedorMainComunidades {
-    background-color: peachpuff;
     height: 720px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px; }
   /*------------comunidades--------------------*/
+  .contenedorTituloComunidad {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .contenedorMainRadio {
-    background-color: powderblue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 1200px;
-    gap: 10px; }
+    gap: 5px; }
   .latinoAmerica {
-    background-color: palegreen;
     height: 300px; }
   .norteAmerica {
-    background-color: palegreen;
     height: 300px; }
   .europa {
-    background-color: palegreen;
     height: 300px; }
   .asia {
-    background-color: plum;
     height: 300px; } }
