@@ -959,12 +959,16 @@ a {
   flex-flow: column nowrap; }
   .inputRegistro .inputSubmit {
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 5px 60px;
     border-style: none;
     background-color: white; }
   .inputRegistro .inputSubmit:hover {
     background-color: yellow;
     transition: 3s; }
+
+.nombresFormulario {
+  margin: 5px; }
 
 /*------navAfter-----*/
 .nav-item {
@@ -1326,7 +1330,7 @@ conciertos {
     width: 45%;
     padding: 20px; }
   .NewsTituloRegistro {
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 40px; }
   .contenedorRegistro {
     height: 250px;
@@ -1588,7 +1592,7 @@ entrevistas {
     width: 45%;
     padding: 20px; }
   .NewsTituloRegistro {
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 40px; }
   .contenedorRegistro {
     height: 250px;
@@ -1850,7 +1854,7 @@ livestreaming {
     width: 45%;
     padding: 20px; }
   .NewsTituloRegistro {
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 40px; }
   .contenedorRegistro {
     height: 250px;
